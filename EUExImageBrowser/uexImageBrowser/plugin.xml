@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<uexplugins>
+    <plugin name="uexImageBrowser">
+        <method name="pick"></method>
+        <method name="open"></method>
+        <method name="save"></method>
+        <method name="pickMulti"></method>
+        <method name="cropImage"></method>
+	</plugin>
+</uexplugins>

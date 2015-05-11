@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uexplugins>
+    <plugin
+        uexName="uexImageBrowser" version="3.0.16" build="16">
+         <info>16:增加uexImageBrowser.cropImage()图片截取功能</info>
+        <build>15:修复uexImageBrowser.pick选取图片质量变差和状态栏会改变的问题</build>
+        <build>14:修复uexImageBrowser调用打开图片浏览器会把白色字体的状态栏改成黑色字体的问题</build>
+        <build>13:解决uexImageBrowser插件使用Three20框架，加载网络图片失败的问题</build>
+        <build>12:修复打开图片浏览器,横图显示不正常的问题</build>
+        <build>11:修复全屏时状态栏依然会显示的bug</build>
+        <build>10:uexImageBrowser插件更新第三方,支持arm64</build>
+        <build>9:多选图片时默认显示最新照片</build>
+        <build>7:open方法调整逻辑与文档和安卓保持一致</build>
+        <build>6:增加多选图片方法</build>
+        <build>5:修复在非ios7风格下状态栏消失的bug</build>
+        <build>4:修改"返回"按钮颜色</build>
+        <build>3:修复iOS7图片显示顶部一部分是空白</build>
+        <build>2:修复调用uexImageBrowser.open后时间栏消失</build>
+        <build>1:修复无法浏览本地照片的bug</build>
+        <build>0:图片浏览器功能插件</build>
+    </plugin>
+</uexplugins>

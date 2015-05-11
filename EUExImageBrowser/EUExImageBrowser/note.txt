@@ -1,0 +1,1 @@
+该plugin接口中，使用到了第三方的开源库three20 需要配置  header search path  "$(SRCROOT)/../../../IOSPlugin/Plugin/module/imagebrowserplugin/three20"

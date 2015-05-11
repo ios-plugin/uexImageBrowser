@@ -1,0 +1,1181 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CDA1DD718C1B0AE00AA00C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1DD618C1B0AE00AA00C7 /* SystemConfiguration.framework */; };
+		3CDA1DD918C1B0B400AA00C7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1DD818C1B0B400AA00C7 /* CoreTelephony.framework */; };
+		3CDA1DDB18C1B0BD00AA00C7 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1DDA18C1B0BD00AA00C7 /* libz.dylib */; };
+		3CDA1DDD18C1B0C500AA00C7 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1DDC18C1B0C500AA00C7 /* libsqlite3.dylib */; };
+		3CDA1DDF18C1B0E100AA00C7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1DDE18C1B0E100AA00C7 /* MapKit.framework */; };
+		3CDA1DE118C1B0F100AA00C7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1DE018C1B0F100AA00C7 /* QuartzCore.framework */; };
+		3CDA1DE318C1B0FD00AA00C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1DE218C1B0FD00AA00C7 /* CoreGraphics.framework */; };
+		3CDA1DE518C1B1A300AA00C7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1DE418C1B1A300AA00C7 /* MobileCoreServices.framework */; };
+		3CDA1DE718C1B1B000AA00C7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1DE618C1B1B000AA00C7 /* AudioToolbox.framework */; };
+		3CDA1F3318C1B93E00AA00C7 /* EUExImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA1DEE18C1B93D00AA00C7 /* EUExImageBrowser.m */; };
+		3CDA1F3418C1B93E00AA00C7 /* AppImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA1DF218C1B93D00AA00C7 /* AppImagePicker.m */; };
+		3CDA1F3518C1B93E00AA00C7 /* DeviceImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA1DF418C1B93D00AA00C7 /* DeviceImagePicker.m */; };
+		3CDA1F3618C1B93E00AA00C7 /* DirectShowImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA1DF618C1B93D00AA00C7 /* DirectShowImageBrowser.m */; };
+		3CDA1F3718C1B93E00AA00C7 /* ImageBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA1DF818C1B93D00AA00C7 /* ImageBrowserViewController.m */; };
+		3CDA1F3818C1B93E00AA00C7 /* MockPhotoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA1DFA18C1B93D00AA00C7 /* MockPhotoSource.m */; };
+		3CDA1F3918C1B93E00AA00C7 /* SingleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDA1DFC18C1B93D00AA00C7 /* SingleImageView.m */; };
+		3CDA1F3A18C1B93E00AA00C7 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1F2C18C1B93E00AA00C7 /* libThree20.a */; };
+		3CDA1F3B18C1B93E00AA00C7 /* libThree20Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1F2D18C1B93E00AA00C7 /* libThree20Core.a */; };
+		3CDA1F3C18C1B93E00AA00C7 /* libThree20Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1F2E18C1B93E00AA00C7 /* libThree20Network.a */; };
+		3CDA1F3D18C1B93E00AA00C7 /* libThree20Style.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1F2F18C1B93E00AA00C7 /* libThree20Style.a */; };
+		3CDA1F3E18C1B93E00AA00C7 /* libThree20UI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1F3018C1B93E00AA00C7 /* libThree20UI.a */; };
+		3CDA1F3F18C1B93E00AA00C7 /* libThree20UICommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1F3118C1B93E00AA00C7 /* libThree20UICommon.a */; };
+		3CDA1F4018C1B93E00AA00C7 /* libThree20UINavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDA1F3218C1B93E00AA00C7 /* libThree20UINavigator.a */; };
+		3CF8834D18C0A0830002412E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF8834C18C0A0830002412E /* Foundation.framework */; };
+		3CF884CC18C0A0DA0002412E /* libAppCanEngine_IOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF884CB18C0A0DA0002412E /* libAppCanEngine_IOS.a */; };
+		3CF884CE18C0A1330002412E /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF884CD18C0A1330002412E /* libstdc++.dylib */; };
+		DE6D985019FA5BB20029F490 /* QBAssetCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6D984019FA5BB20029F490 /* QBAssetCollectionViewController.m */; };
+		DE6D985119FA5BB20029F490 /* QBImagePickerAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6D984319FA5BB20029F490 /* QBImagePickerAssetCell.m */; };
+		DE6D985219FA5BB20029F490 /* QBImagePickerAssetView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6D984619FA5BB20029F490 /* QBImagePickerAssetView.m */; };
+		DE6D985319FA5BB20029F490 /* QBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6D984919FA5BB20029F490 /* QBImagePickerController.m */; };
+		DE6D985419FA5BB20029F490 /* QBImagePickerFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6D984B19FA5BB20029F490 /* QBImagePickerFooterView.m */; };
+		DE6D985519FA5BB20029F490 /* QBImagePickerGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6D984D19FA5BB20029F490 /* QBImagePickerGroupCell.m */; };
+		DE6D985619FA5BB20029F490 /* QBImagePickerVideoInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6D984F19FA5BB20029F490 /* QBImagePickerVideoInfoView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3CF8834718C0A0830002412E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3CDA1DD618C1B0AE00AA00C7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3CDA1DD818C1B0B400AA00C7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3CDA1DDA18C1B0BD00AA00C7 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		3CDA1DDC18C1B0C500AA00C7 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		3CDA1DDE18C1B0E100AA00C7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3CDA1DE018C1B0F100AA00C7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3CDA1DE218C1B0FD00AA00C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3CDA1DE418C1B1A300AA00C7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3CDA1DE618C1B1B000AA00C7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3CDA1DE918C1B93D00AA00C7 /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
+		3CDA1DEA18C1B93D00AA00C7 /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
+		3CDA1DEB18C1B93D00AA00C7 /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
+		3CDA1DEC18C1B93D00AA00C7 /* EUExImageBrowser-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EUExImageBrowser-Prefix.pch"; path = "EUExImageBrowser/EUExImageBrowser-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		3CDA1DED18C1B93D00AA00C7 /* EUExImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EUExImageBrowser.h; path = EUExImageBrowser/EUExImageBrowser.h; sourceTree = SOURCE_ROOT; };
+		3CDA1DEE18C1B93D00AA00C7 /* EUExImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EUExImageBrowser.m; path = EUExImageBrowser/EUExImageBrowser.m; sourceTree = SOURCE_ROOT; };
+		3CDA1DEF18C1B93D00AA00C7 /* note.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = note.txt; path = EUExImageBrowser/note.txt; sourceTree = SOURCE_ROOT; };
+		3CDA1DF118C1B93D00AA00C7 /* AppImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppImagePicker.h; sourceTree = "<group>"; };
+		3CDA1DF218C1B93D00AA00C7 /* AppImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppImagePicker.m; sourceTree = "<group>"; };
+		3CDA1DF318C1B93D00AA00C7 /* DeviceImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceImagePicker.h; sourceTree = "<group>"; };
+		3CDA1DF418C1B93D00AA00C7 /* DeviceImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceImagePicker.m; sourceTree = "<group>"; };
+		3CDA1DF518C1B93D00AA00C7 /* DirectShowImageBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectShowImageBrowser.h; sourceTree = "<group>"; };
+		3CDA1DF618C1B93D00AA00C7 /* DirectShowImageBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectShowImageBrowser.m; sourceTree = "<group>"; };
+		3CDA1DF718C1B93D00AA00C7 /* ImageBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBrowserViewController.h; sourceTree = "<group>"; };
+		3CDA1DF818C1B93D00AA00C7 /* ImageBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserViewController.m; sourceTree = "<group>"; };
+		3CDA1DF918C1B93D00AA00C7 /* MockPhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockPhotoSource.h; sourceTree = "<group>"; };
+		3CDA1DFA18C1B93D00AA00C7 /* MockPhotoSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockPhotoSource.m; sourceTree = "<group>"; };
+		3CDA1DFB18C1B93D00AA00C7 /* SingleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleImageView.h; sourceTree = "<group>"; };
+		3CDA1DFC18C1B93D00AA00C7 /* SingleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleImageView.m; sourceTree = "<group>"; };
+		3CDA1DFF18C1B93D00AA00C7 /* Three20+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Three20+Additions.h"; sourceTree = "<group>"; };
+		3CDA1E0018C1B93D00AA00C7 /* Three20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Three20.h; sourceTree = "<group>"; };
+		3CDA1E0218C1B93D00AA00C7 /* NSArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayAdditions.h; sourceTree = "<group>"; };
+		3CDA1E0318C1B93D00AA00C7 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		3CDA1E0418C1B93D00AA00C7 /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateAdditions.h; sourceTree = "<group>"; };
+		3CDA1E0518C1B93D00AA00C7 /* NSMutableArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArrayAdditions.h; sourceTree = "<group>"; };
+		3CDA1E0618C1B93D00AA00C7 /* NSMutableDictionaryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableDictionaryAdditions.h; sourceTree = "<group>"; };
+		3CDA1E0718C1B93D00AA00C7 /* NSObjectAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectAdditions.h; sourceTree = "<group>"; };
+		3CDA1E0818C1B93D00AA00C7 /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
+		3CDA1E0A18C1B93D00AA00C7 /* TTExtensionInfoPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTExtensionInfoPrivate.h; sourceTree = "<group>"; };
+		3CDA1E0B18C1B93D00AA00C7 /* Three20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Three20.h; sourceTree = "<group>"; };
+		3CDA1E0C18C1B93D00AA00C7 /* Three20Core+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Three20Core+Additions.h"; sourceTree = "<group>"; };
+		3CDA1E0D18C1B93D00AA00C7 /* Three20Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Three20Core.h; sourceTree = "<group>"; };
+		3CDA1E0E18C1B93D00AA00C7 /* Three20Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Three20Version.h; sourceTree = "<group>"; };
+		3CDA1E0F18C1B93D00AA00C7 /* TTAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAvailability.h; sourceTree = "<group>"; };
+		3CDA1E1018C1B93D00AA00C7 /* TTCorePreprocessorMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTCorePreprocessorMacros.h; sourceTree = "<group>"; };
+		3CDA1E1118C1B93D00AA00C7 /* TTDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDebug.h; sourceTree = "<group>"; };
+		3CDA1E1218C1B93D00AA00C7 /* TTDebugFlags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDebugFlags.h; sourceTree = "<group>"; };
+		3CDA1E1318C1B93D00AA00C7 /* TTEntityTables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTEntityTables.h; sourceTree = "<group>"; };
+		3CDA1E1418C1B93D00AA00C7 /* TTExtensionAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTExtensionAuthor.h; sourceTree = "<group>"; };
+		3CDA1E1518C1B93D00AA00C7 /* TTExtensionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTExtensionInfo.h; sourceTree = "<group>"; };
+		3CDA1E1618C1B93D00AA00C7 /* TTExtensionLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTExtensionLoader.h; sourceTree = "<group>"; };
+		3CDA1E1718C1B93D00AA00C7 /* TTGlobalCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobalCore.h; sourceTree = "<group>"; };
+		3CDA1E1818C1B93D00AA00C7 /* TTGlobalCoreLocale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobalCoreLocale.h; sourceTree = "<group>"; };
+		3CDA1E1918C1B93D00AA00C7 /* TTGlobalCorePaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobalCorePaths.h; sourceTree = "<group>"; };
+		3CDA1E1A18C1B93D00AA00C7 /* TTGlobalCoreRects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobalCoreRects.h; sourceTree = "<group>"; };
+		3CDA1E1B18C1B93D00AA00C7 /* TTMarkupStripper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMarkupStripper.h; sourceTree = "<group>"; };
+		3CDA1E1E18C1B93D00AA00C7 /* TTRequestLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRequestLoader.h; sourceTree = "<group>"; };
+		3CDA1E1F18C1B93D00AA00C7 /* TTURLRequestQueueInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLRequestQueueInternal.h; sourceTree = "<group>"; };
+		3CDA1E2018C1B93D00AA00C7 /* Three20Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Three20Network.h; sourceTree = "<group>"; };
+		3CDA1E2118C1B93D00AA00C7 /* TTErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTErrorCodes.h; sourceTree = "<group>"; };
+		3CDA1E2218C1B93D00AA00C7 /* TTGlobalNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobalNetwork.h; sourceTree = "<group>"; };
+		3CDA1E2318C1B93D00AA00C7 /* TTModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTModel.h; sourceTree = "<group>"; };
+		3CDA1E2418C1B93D00AA00C7 /* TTModelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTModelDelegate.h; sourceTree = "<group>"; };
+		3CDA1E2518C1B93D00AA00C7 /* TTURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLCache.h; sourceTree = "<group>"; };
+		3CDA1E2618C1B93D00AA00C7 /* TTURLDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLDataResponse.h; sourceTree = "<group>"; };
+		3CDA1E2718C1B93D00AA00C7 /* TTURLImageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLImageResponse.h; sourceTree = "<group>"; };
+		3CDA1E2818C1B93D00AA00C7 /* TTURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLRequest.h; sourceTree = "<group>"; };
+		3CDA1E2918C1B93D00AA00C7 /* TTURLRequestCachePolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLRequestCachePolicy.h; sourceTree = "<group>"; };
+		3CDA1E2A18C1B93D00AA00C7 /* TTURLRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLRequestDelegate.h; sourceTree = "<group>"; };
+		3CDA1E2B18C1B93D00AA00C7 /* TTURLRequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLRequestModel.h; sourceTree = "<group>"; };
+		3CDA1E2C18C1B93D00AA00C7 /* TTURLRequestQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLRequestQueue.h; sourceTree = "<group>"; };
+		3CDA1E2D18C1B93D00AA00C7 /* TTURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLResponse.h; sourceTree = "<group>"; };
+		3CDA1E2E18C1B93D00AA00C7 /* TTUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUserInfo.h; sourceTree = "<group>"; };
+		3CDA1E3118C1B93D00AA00C7 /* TTShapeInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTShapeInternal.h; sourceTree = "<group>"; };
+		3CDA1E3218C1B93D00AA00C7 /* TTStyledNodeInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledNodeInternal.h; sourceTree = "<group>"; };
+		3CDA1E3318C1B93D00AA00C7 /* TTStyleInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleInternal.h; sourceTree = "<group>"; };
+		3CDA1E3418C1B93D00AA00C7 /* Three20Style+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Three20Style+Additions.h"; sourceTree = "<group>"; };
+		3CDA1E3518C1B93D00AA00C7 /* Three20Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Three20Style.h; sourceTree = "<group>"; };
+		3CDA1E3618C1B93D00AA00C7 /* TTBevelBorderStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBevelBorderStyle.h; sourceTree = "<group>"; };
+		3CDA1E3718C1B93D00AA00C7 /* TTBlendStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBlendStyle.h; sourceTree = "<group>"; };
+		3CDA1E3818C1B93D00AA00C7 /* TTBoxStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBoxStyle.h; sourceTree = "<group>"; };
+		3CDA1E3918C1B93D00AA00C7 /* TTContentStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTContentStyle.h; sourceTree = "<group>"; };
+		3CDA1E3A18C1B93D00AA00C7 /* TTDefaultStyleSheet+DragRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TTDefaultStyleSheet+DragRefreshHeader.h"; sourceTree = "<group>"; };
+		3CDA1E3B18C1B93D00AA00C7 /* TTDefaultStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDefaultStyleSheet.h; sourceTree = "<group>"; };
+		3CDA1E3C18C1B93D00AA00C7 /* TTFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTFlowLayout.h; sourceTree = "<group>"; };
+		3CDA1E3D18C1B93D00AA00C7 /* TTFourBorderStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTFourBorderStyle.h; sourceTree = "<group>"; };
+		3CDA1E3E18C1B93D00AA00C7 /* TTGlobalStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobalStyle.h; sourceTree = "<group>"; };
+		3CDA1E3F18C1B93D00AA00C7 /* TTGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGridLayout.h; sourceTree = "<group>"; };
+		3CDA1E4018C1B93D00AA00C7 /* TTHighlightBorderStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTHighlightBorderStyle.h; sourceTree = "<group>"; };
+		3CDA1E4118C1B93D00AA00C7 /* TTImageStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTImageStyle.h; sourceTree = "<group>"; };
+		3CDA1E4218C1B93D00AA00C7 /* TTInnerShadowStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTInnerShadowStyle.h; sourceTree = "<group>"; };
+		3CDA1E4318C1B93D00AA00C7 /* TTInsetStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTInsetStyle.h; sourceTree = "<group>"; };
+		3CDA1E4418C1B93D00AA00C7 /* TTLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLayout.h; sourceTree = "<group>"; };
+		3CDA1E4518C1B93D00AA00C7 /* TTLinearGradientBorderStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLinearGradientBorderStyle.h; sourceTree = "<group>"; };
+		3CDA1E4618C1B93D00AA00C7 /* TTLinearGradientFillStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLinearGradientFillStyle.h; sourceTree = "<group>"; };
+		3CDA1E4718C1B93D00AA00C7 /* TTMaskStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMaskStyle.h; sourceTree = "<group>"; };
+		3CDA1E4818C1B93D00AA00C7 /* TTPartStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPartStyle.h; sourceTree = "<group>"; };
+		3CDA1E4918C1B93D00AA00C7 /* TTPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPosition.h; sourceTree = "<group>"; };
+		3CDA1E4A18C1B93D00AA00C7 /* TTRectangleShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRectangleShape.h; sourceTree = "<group>"; };
+		3CDA1E4B18C1B93D00AA00C7 /* TTReflectiveFillStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTReflectiveFillStyle.h; sourceTree = "<group>"; };
+		3CDA1E4C18C1B93D00AA00C7 /* TTRoundedLeftArrowShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRoundedLeftArrowShape.h; sourceTree = "<group>"; };
+		3CDA1E4D18C1B93D00AA00C7 /* TTRoundedRectangleShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRoundedRectangleShape.h; sourceTree = "<group>"; };
+		3CDA1E4E18C1B93D00AA00C7 /* TTRoundedRightArrowShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRoundedRightArrowShape.h; sourceTree = "<group>"; };
+		3CDA1E4F18C1B93D00AA00C7 /* TTShadowStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTShadowStyle.h; sourceTree = "<group>"; };
+		3CDA1E5018C1B93D00AA00C7 /* TTShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTShape.h; sourceTree = "<group>"; };
+		3CDA1E5118C1B93D00AA00C7 /* TTShapeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTShapeStyle.h; sourceTree = "<group>"; };
+		3CDA1E5218C1B93D00AA00C7 /* TTSolidBorderStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSolidBorderStyle.h; sourceTree = "<group>"; };
+		3CDA1E5318C1B93D00AA00C7 /* TTSolidFillStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSolidFillStyle.h; sourceTree = "<group>"; };
+		3CDA1E5418C1B93D00AA00C7 /* TTSpeechBubbleShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSpeechBubbleShape.h; sourceTree = "<group>"; };
+		3CDA1E5518C1B93D00AA00C7 /* TTStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyle.h; sourceTree = "<group>"; };
+		3CDA1E5618C1B93D00AA00C7 /* TTStyleContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleContext.h; sourceTree = "<group>"; };
+		3CDA1E5718C1B93D00AA00C7 /* TTStyledBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledBlock.h; sourceTree = "<group>"; };
+		3CDA1E5818C1B93D00AA00C7 /* TTStyledBoldNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledBoldNode.h; sourceTree = "<group>"; };
+		3CDA1E5918C1B93D00AA00C7 /* TTStyledBoxFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledBoxFrame.h; sourceTree = "<group>"; };
+		3CDA1E5A18C1B93D00AA00C7 /* TTStyledButtonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledButtonNode.h; sourceTree = "<group>"; };
+		3CDA1E5B18C1B93D00AA00C7 /* TTStyleDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleDelegate.h; sourceTree = "<group>"; };
+		3CDA1E5C18C1B93D00AA00C7 /* TTStyledElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledElement.h; sourceTree = "<group>"; };
+		3CDA1E5D18C1B93D00AA00C7 /* TTStyledFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledFrame.h; sourceTree = "<group>"; };
+		3CDA1E5E18C1B93D00AA00C7 /* TTStyledImageFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledImageFrame.h; sourceTree = "<group>"; };
+		3CDA1E5F18C1B93D00AA00C7 /* TTStyledImageNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledImageNode.h; sourceTree = "<group>"; };
+		3CDA1E6018C1B93D00AA00C7 /* TTStyledInline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledInline.h; sourceTree = "<group>"; };
+		3CDA1E6118C1B93D00AA00C7 /* TTStyledInlineBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledInlineBlock.h; sourceTree = "<group>"; };
+		3CDA1E6218C1B93D00AA00C7 /* TTStyledInlineFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledInlineFrame.h; sourceTree = "<group>"; };
+		3CDA1E6318C1B93D00AA00C7 /* TTStyledItalicNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledItalicNode.h; sourceTree = "<group>"; };
+		3CDA1E6418C1B93D00AA00C7 /* TTStyledLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledLayout.h; sourceTree = "<group>"; };
+		3CDA1E6518C1B93D00AA00C7 /* TTStyledLineBreakNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledLineBreakNode.h; sourceTree = "<group>"; };
+		3CDA1E6618C1B93D00AA00C7 /* TTStyledLinkNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledLinkNode.h; sourceTree = "<group>"; };
+		3CDA1E6718C1B93D00AA00C7 /* TTStyledNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledNode.h; sourceTree = "<group>"; };
+		3CDA1E6818C1B93D00AA00C7 /* TTStyledText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledText.h; sourceTree = "<group>"; };
+		3CDA1E6918C1B93D00AA00C7 /* TTStyledTextDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledTextDelegate.h; sourceTree = "<group>"; };
+		3CDA1E6A18C1B93D00AA00C7 /* TTStyledTextFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledTextFrame.h; sourceTree = "<group>"; };
+		3CDA1E6B18C1B93D00AA00C7 /* TTStyledTextNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledTextNode.h; sourceTree = "<group>"; };
+		3CDA1E6C18C1B93D00AA00C7 /* TTStyledTextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledTextParser.h; sourceTree = "<group>"; };
+		3CDA1E6D18C1B93D00AA00C7 /* TTStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyleSheet.h; sourceTree = "<group>"; };
+		3CDA1E6E18C1B93D00AA00C7 /* TTTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextStyle.h; sourceTree = "<group>"; };
+		3CDA1E6F18C1B93D00AA00C7 /* UIColorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorAdditions.h; sourceTree = "<group>"; };
+		3CDA1E7018C1B93D00AA00C7 /* UIFontAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFontAdditions.h; sourceTree = "<group>"; };
+		3CDA1E7118C1B93D00AA00C7 /* UIImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageAdditions.h; sourceTree = "<group>"; };
+		3CDA1E7418C1B93D00AA00C7 /* TTButtonContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTButtonContent.h; sourceTree = "<group>"; };
+		3CDA1E7518C1B93D00AA00C7 /* TTImageLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTImageLayer.h; sourceTree = "<group>"; };
+		3CDA1E7618C1B93E00AA00C7 /* TTImageViewInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTImageViewInternal.h; sourceTree = "<group>"; };
+		3CDA1E7718C1B93E00AA00C7 /* TTLauncherHighlightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLauncherHighlightView.h; sourceTree = "<group>"; };
+		3CDA1E7818C1B93E00AA00C7 /* TTLauncherScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLauncherScrollView.h; sourceTree = "<group>"; };
+		3CDA1E7918C1B93E00AA00C7 /* TTNavigatorWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigatorWindow.h; sourceTree = "<group>"; };
+		3CDA1E7A18C1B93E00AA00C7 /* TTSearchTextFieldInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSearchTextFieldInternal.h; sourceTree = "<group>"; };
+		3CDA1E7B18C1B93E00AA00C7 /* TTTabBarInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBarInternal.h; sourceTree = "<group>"; };
+		3CDA1E7C18C1B93E00AA00C7 /* TTTextEditorInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextEditorInternal.h; sourceTree = "<group>"; };
+		3CDA1E7D18C1B93E00AA00C7 /* TTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextView.h; sourceTree = "<group>"; };
+		3CDA1E7E18C1B93E00AA00C7 /* Three20UI+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Three20UI+Additions.h"; sourceTree = "<group>"; };
+		3CDA1E7F18C1B93E00AA00C7 /* Three20UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Three20UI.h; sourceTree = "<group>"; };
+		3CDA1E8018C1B93E00AA00C7 /* TTActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTActionSheet.h; sourceTree = "<group>"; };
+		3CDA1E8118C1B93E00AA00C7 /* TTActionSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTActionSheetController.h; sourceTree = "<group>"; };
+		3CDA1E8218C1B93E00AA00C7 /* TTActionSheetControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTActionSheetControllerDelegate.h; sourceTree = "<group>"; };
+		3CDA1E8318C1B93E00AA00C7 /* TTActivityLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTActivityLabel.h; sourceTree = "<group>"; };
+		3CDA1E8418C1B93E00AA00C7 /* TTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAlertView.h; sourceTree = "<group>"; };
+		3CDA1E8518C1B93E00AA00C7 /* TTAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAlertViewController.h; sourceTree = "<group>"; };
+		3CDA1E8618C1B93E00AA00C7 /* TTAlertViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAlertViewControllerDelegate.h; sourceTree = "<group>"; };
+		3CDA1E8718C1B93E00AA00C7 /* TTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTButton.h; sourceTree = "<group>"; };
+		3CDA1E8818C1B93E00AA00C7 /* TTButtonBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTButtonBar.h; sourceTree = "<group>"; };
+		3CDA1E8918C1B93E00AA00C7 /* TTErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTErrorView.h; sourceTree = "<group>"; };
+		3CDA1E8A18C1B93E00AA00C7 /* TTExtensionInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTExtensionInfoController.h; sourceTree = "<group>"; };
+		3CDA1E8B18C1B93E00AA00C7 /* TTExtensionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTExtensionsController.h; sourceTree = "<group>"; };
+		3CDA1E8C18C1B93E00AA00C7 /* TTImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTImageView.h; sourceTree = "<group>"; };
+		3CDA1E8D18C1B93E00AA00C7 /* TTImageViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTImageViewDelegate.h; sourceTree = "<group>"; };
+		3CDA1E8E18C1B93E00AA00C7 /* TTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLabel.h; sourceTree = "<group>"; };
+		3CDA1E8F18C1B93E00AA00C7 /* TTLauncherButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLauncherButton.h; sourceTree = "<group>"; };
+		3CDA1E9018C1B93E00AA00C7 /* TTLauncherItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLauncherItem.h; sourceTree = "<group>"; };
+		3CDA1E9118C1B93E00AA00C7 /* TTLauncherPersistenceMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLauncherPersistenceMode.h; sourceTree = "<group>"; };
+		3CDA1E9218C1B93E00AA00C7 /* TTLauncherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLauncherView.h; sourceTree = "<group>"; };
+		3CDA1E9318C1B93E00AA00C7 /* TTLauncherViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLauncherViewDelegate.h; sourceTree = "<group>"; };
+		3CDA1E9418C1B93E00AA00C7 /* TTLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLink.h; sourceTree = "<group>"; };
+		3CDA1E9518C1B93E00AA00C7 /* TTListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTListDataSource.h; sourceTree = "<group>"; };
+		3CDA1E9618C1B93E00AA00C7 /* TTMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMessageController.h; sourceTree = "<group>"; };
+		3CDA1E9718C1B93E00AA00C7 /* TTMessageControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMessageControllerDelegate.h; sourceTree = "<group>"; };
+		3CDA1E9818C1B93E00AA00C7 /* TTMessageField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMessageField.h; sourceTree = "<group>"; };
+		3CDA1E9918C1B93E00AA00C7 /* TTMessageRecipientField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMessageRecipientField.h; sourceTree = "<group>"; };
+		3CDA1E9A18C1B93E00AA00C7 /* TTMessageSubjectField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMessageSubjectField.h; sourceTree = "<group>"; };
+		3CDA1E9B18C1B93E00AA00C7 /* TTMessageTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMessageTextField.h; sourceTree = "<group>"; };
+		3CDA1E9C18C1B93E00AA00C7 /* TTModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTModelViewController.h; sourceTree = "<group>"; };
+		3CDA1E9D18C1B93E00AA00C7 /* TTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigationController.h; sourceTree = "<group>"; };
+		3CDA1E9E18C1B93E00AA00C7 /* TTNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigator.h; sourceTree = "<group>"; };
+		3CDA1E9F18C1B93E00AA00C7 /* TTPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPageControl.h; sourceTree = "<group>"; };
+		3CDA1EA018C1B93E00AA00C7 /* TTPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPhoto.h; sourceTree = "<group>"; };
+		3CDA1EA118C1B93E00AA00C7 /* TTPhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPhotoSource.h; sourceTree = "<group>"; };
+		3CDA1EA218C1B93E00AA00C7 /* TTPhotoVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPhotoVersion.h; sourceTree = "<group>"; };
+		3CDA1EA318C1B93E00AA00C7 /* TTPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPhotoView.h; sourceTree = "<group>"; };
+		3CDA1EA418C1B93E00AA00C7 /* TTPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPhotoViewController.h; sourceTree = "<group>"; };
+		3CDA1EA518C1B93E00AA00C7 /* TTPickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPickerTextField.h; sourceTree = "<group>"; };
+		3CDA1EA618C1B93E00AA00C7 /* TTPickerTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPickerTextFieldDelegate.h; sourceTree = "<group>"; };
+		3CDA1EA718C1B93E00AA00C7 /* TTPickerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPickerViewCell.h; sourceTree = "<group>"; };
+		3CDA1EA818C1B93E00AA00C7 /* TTPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPopupViewController.h; sourceTree = "<group>"; };
+		3CDA1EA918C1B93E00AA00C7 /* TTPostController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPostController.h; sourceTree = "<group>"; };
+		3CDA1EAA18C1B93E00AA00C7 /* TTPostControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPostControllerDelegate.h; sourceTree = "<group>"; };
+		3CDA1EAB18C1B93E00AA00C7 /* TTRecursiveProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRecursiveProgress.h; sourceTree = "<group>"; };
+		3CDA1EAC18C1B93E00AA00C7 /* TTScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTScrollView.h; sourceTree = "<group>"; };
+		3CDA1EAD18C1B93E00AA00C7 /* TTScrollViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTScrollViewDataSource.h; sourceTree = "<group>"; };
+		3CDA1EAE18C1B93E00AA00C7 /* TTScrollViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTScrollViewDelegate.h; sourceTree = "<group>"; };
+		3CDA1EAF18C1B93E00AA00C7 /* TTSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSearchBar.h; sourceTree = "<group>"; };
+		3CDA1EB018C1B93E00AA00C7 /* TTSearchDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSearchDisplayController.h; sourceTree = "<group>"; };
+		3CDA1EB118C1B93E00AA00C7 /* TTSearchlightLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSearchlightLabel.h; sourceTree = "<group>"; };
+		3CDA1EB218C1B93E00AA00C7 /* TTSearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSearchTextField.h; sourceTree = "<group>"; };
+		3CDA1EB318C1B93E00AA00C7 /* TTSearchTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSearchTextFieldDelegate.h; sourceTree = "<group>"; };
+		3CDA1EB418C1B93E00AA00C7 /* TTSectionedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSectionedDataSource.h; sourceTree = "<group>"; };
+		3CDA1EB518C1B93E00AA00C7 /* TTSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSplitViewController.h; sourceTree = "<group>"; };
+		3CDA1EB618C1B93E00AA00C7 /* TTStyledTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledTextLabel.h; sourceTree = "<group>"; };
+		3CDA1EB718C1B93E00AA00C7 /* TTStyledTextTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledTextTableCell.h; sourceTree = "<group>"; };
+		3CDA1EB818C1B93E00AA00C7 /* TTStyledTextTableItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTStyledTextTableItemCell.h; sourceTree = "<group>"; };
+		3CDA1EB918C1B93E00AA00C7 /* TTTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTab.h; sourceTree = "<group>"; };
+		3CDA1EBA18C1B93E00AA00C7 /* TTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabBar.h; sourceTree = "<group>"; };
+		3CDA1EBB18C1B93E00AA00C7 /* TTTabDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabDelegate.h; sourceTree = "<group>"; };
+		3CDA1EBC18C1B93E00AA00C7 /* TTTabGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabGrid.h; sourceTree = "<group>"; };
+		3CDA1EBD18C1B93E00AA00C7 /* TTTabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabItem.h; sourceTree = "<group>"; };
+		3CDA1EBE18C1B93E00AA00C7 /* TTTableActivityItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableActivityItem.h; sourceTree = "<group>"; };
+		3CDA1EBF18C1B93E00AA00C7 /* TTTableActivityItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableActivityItemCell.h; sourceTree = "<group>"; };
+		3CDA1EC018C1B93E00AA00C7 /* TTTableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableButton.h; sourceTree = "<group>"; };
+		3CDA1EC118C1B93E00AA00C7 /* TTTableCaptionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableCaptionItem.h; sourceTree = "<group>"; };
+		3CDA1EC218C1B93E00AA00C7 /* TTTableCaptionItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableCaptionItemCell.h; sourceTree = "<group>"; };
+		3CDA1EC318C1B93E00AA00C7 /* TTTableControlCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableControlCell.h; sourceTree = "<group>"; };
+		3CDA1EC418C1B93E00AA00C7 /* TTTableControlItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableControlItem.h; sourceTree = "<group>"; };
+		3CDA1EC518C1B93E00AA00C7 /* TTTableFlushViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableFlushViewCell.h; sourceTree = "<group>"; };
+		3CDA1EC618C1B93E00AA00C7 /* TTTableFooterInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableFooterInfiniteScrollView.h; sourceTree = "<group>"; };
+		3CDA1EC718C1B93E00AA00C7 /* TTTableGrayTextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableGrayTextItem.h; sourceTree = "<group>"; };
+		3CDA1EC818C1B93E00AA00C7 /* TTTableHeaderDragRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableHeaderDragRefreshView.h; sourceTree = "<group>"; };
+		3CDA1EC918C1B93E00AA00C7 /* TTTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableHeaderView.h; sourceTree = "<group>"; };
+		3CDA1ECA18C1B93E00AA00C7 /* TTTableImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableImageItem.h; sourceTree = "<group>"; };
+		3CDA1ECB18C1B93E00AA00C7 /* TTTableImageItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableImageItemCell.h; sourceTree = "<group>"; };
+		3CDA1ECC18C1B93E00AA00C7 /* TTTableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableItem.h; sourceTree = "<group>"; };
+		3CDA1ECD18C1B93E00AA00C7 /* TTTableLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableLink.h; sourceTree = "<group>"; };
+		3CDA1ECE18C1B93E00AA00C7 /* TTTableLinkedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableLinkedItem.h; sourceTree = "<group>"; };
+		3CDA1ECF18C1B93E00AA00C7 /* TTTableLinkedItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableLinkedItemCell.h; sourceTree = "<group>"; };
+		3CDA1ED018C1B93E00AA00C7 /* TTTableLongTextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableLongTextItem.h; sourceTree = "<group>"; };
+		3CDA1ED118C1B93E00AA00C7 /* TTTableMessageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableMessageItem.h; sourceTree = "<group>"; };
+		3CDA1ED218C1B93E00AA00C7 /* TTTableMessageItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableMessageItemCell.h; sourceTree = "<group>"; };
+		3CDA1ED318C1B93E00AA00C7 /* TTTableMoreButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableMoreButton.h; sourceTree = "<group>"; };
+		3CDA1ED418C1B93E00AA00C7 /* TTTableMoreButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableMoreButtonCell.h; sourceTree = "<group>"; };
+		3CDA1ED518C1B93E00AA00C7 /* TTTableRightCaptionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableRightCaptionItem.h; sourceTree = "<group>"; };
+		3CDA1ED618C1B93E00AA00C7 /* TTTableRightCaptionItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableRightCaptionItemCell.h; sourceTree = "<group>"; };
+		3CDA1ED718C1B93E00AA00C7 /* TTTableRightImageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableRightImageItem.h; sourceTree = "<group>"; };
+		3CDA1ED818C1B93E00AA00C7 /* TTTableStyledTextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableStyledTextItem.h; sourceTree = "<group>"; };
+		3CDA1ED918C1B93E00AA00C7 /* TTTableSubtextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableSubtextItem.h; sourceTree = "<group>"; };
+		3CDA1EDA18C1B93E00AA00C7 /* TTTableSubtextItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableSubtextItemCell.h; sourceTree = "<group>"; };
+		3CDA1EDB18C1B93E00AA00C7 /* TTTableSubtitleItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableSubtitleItem.h; sourceTree = "<group>"; };
+		3CDA1EDC18C1B93E00AA00C7 /* TTTableSubtitleItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableSubtitleItemCell.h; sourceTree = "<group>"; };
+		3CDA1EDD18C1B93E00AA00C7 /* TTTableSummaryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableSummaryItem.h; sourceTree = "<group>"; };
+		3CDA1EDE18C1B93E00AA00C7 /* TTTableTextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableTextItem.h; sourceTree = "<group>"; };
+		3CDA1EDF18C1B93E00AA00C7 /* TTTableTextItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableTextItemCell.h; sourceTree = "<group>"; };
+		3CDA1EE018C1B93E00AA00C7 /* TTTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableView.h; sourceTree = "<group>"; };
+		3CDA1EE118C1B93E00AA00C7 /* TTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableViewCell.h; sourceTree = "<group>"; };
+		3CDA1EE218C1B93E00AA00C7 /* TTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableViewController.h; sourceTree = "<group>"; };
+		3CDA1EE318C1B93E00AA00C7 /* TTTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableViewDataSource.h; sourceTree = "<group>"; };
+		3CDA1EE418C1B93E00AA00C7 /* TTTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableViewDelegate.h; sourceTree = "<group>"; };
+		3CDA1EE518C1B93E00AA00C7 /* TTTableViewDragRefreshDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableViewDragRefreshDelegate.h; sourceTree = "<group>"; };
+		3CDA1EE618C1B93E00AA00C7 /* TTTableViewGroupedVarHeightDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableViewGroupedVarHeightDelegate.h; sourceTree = "<group>"; };
+		3CDA1EE718C1B93E00AA00C7 /* TTTableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableViewItem.h; sourceTree = "<group>"; };
+		3CDA1EE818C1B93E00AA00C7 /* TTTableViewNetworkEnabledDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableViewNetworkEnabledDelegate.h; sourceTree = "<group>"; };
+		3CDA1EE918C1B93E00AA00C7 /* TTTableViewPlainDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableViewPlainDelegate.h; sourceTree = "<group>"; };
+		3CDA1EEA18C1B93E00AA00C7 /* TTTableViewPlainVarHeightDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableViewPlainVarHeightDelegate.h; sourceTree = "<group>"; };
+		3CDA1EEB18C1B93E00AA00C7 /* TTTableViewVarHeightDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTableViewVarHeightDelegate.h; sourceTree = "<group>"; };
+		3CDA1EEC18C1B93E00AA00C7 /* TTTabStrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTabStrip.h; sourceTree = "<group>"; };
+		3CDA1EED18C1B93E00AA00C7 /* TTTextBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextBarController.h; sourceTree = "<group>"; };
+		3CDA1EEE18C1B93E00AA00C7 /* TTTextBarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextBarDelegate.h; sourceTree = "<group>"; };
+		3CDA1EEF18C1B93E00AA00C7 /* TTTextEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextEditor.h; sourceTree = "<group>"; };
+		3CDA1EF018C1B93E00AA00C7 /* TTTextEditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTextEditorDelegate.h; sourceTree = "<group>"; };
+		3CDA1EF118C1B93E00AA00C7 /* TTThumbsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTThumbsDataSource.h; sourceTree = "<group>"; };
+		3CDA1EF218C1B93E00AA00C7 /* TTThumbsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTThumbsTableViewCell.h; sourceTree = "<group>"; };
+		3CDA1EF318C1B93E00AA00C7 /* TTThumbsTableViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTThumbsTableViewCellDelegate.h; sourceTree = "<group>"; };
+		3CDA1EF418C1B93E00AA00C7 /* TTThumbsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTThumbsViewController.h; sourceTree = "<group>"; };
+		3CDA1EF518C1B93E00AA00C7 /* TTThumbsViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTThumbsViewControllerDelegate.h; sourceTree = "<group>"; };
+		3CDA1EF618C1B93E00AA00C7 /* TTThumbView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTThumbView.h; sourceTree = "<group>"; };
+		3CDA1EF718C1B93E00AA00C7 /* TTUnclippedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTUnclippedView.h; sourceTree = "<group>"; };
+		3CDA1EF818C1B93E00AA00C7 /* TTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTView.h; sourceTree = "<group>"; };
+		3CDA1EF918C1B93E00AA00C7 /* TTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTViewController.h; sourceTree = "<group>"; };
+		3CDA1EFA18C1B93E00AA00C7 /* TTWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTWebController.h; sourceTree = "<group>"; };
+		3CDA1EFB18C1B93E00AA00C7 /* TTYouTubeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTYouTubeView.h; sourceTree = "<group>"; };
+		3CDA1EFC18C1B93E00AA00C7 /* UINavigationControllerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavigationControllerAdditions.h; sourceTree = "<group>"; };
+		3CDA1EFD18C1B93E00AA00C7 /* UINSObjectAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINSObjectAdditions.h; sourceTree = "<group>"; };
+		3CDA1EFE18C1B93E00AA00C7 /* UINSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINSStringAdditions.h; sourceTree = "<group>"; };
+		3CDA1EFF18C1B93E00AA00C7 /* UITabBarControllerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITabBarControllerAdditions.h; sourceTree = "<group>"; };
+		3CDA1F0018C1B93E00AA00C7 /* UITableViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewAdditions.h; sourceTree = "<group>"; };
+		3CDA1F0118C1B93E00AA00C7 /* UIToolbarAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIToolbarAdditions.h; sourceTree = "<group>"; };
+		3CDA1F0218C1B93E00AA00C7 /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
+		3CDA1F0318C1B93E00AA00C7 /* UIWebViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewAdditions.h; sourceTree = "<group>"; };
+		3CDA1F0618C1B93E00AA00C7 /* UIViewControllerGarbageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerGarbageCollection.h; sourceTree = "<group>"; };
+		3CDA1F0718C1B93E00AA00C7 /* Three20UICommon+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Three20UICommon+Additions.h"; sourceTree = "<group>"; };
+		3CDA1F0818C1B93E00AA00C7 /* Three20UICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Three20UICommon.h; sourceTree = "<group>"; };
+		3CDA1F0918C1B93E00AA00C7 /* TTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseViewController.h; sourceTree = "<group>"; };
+		3CDA1F0A18C1B93E00AA00C7 /* TTGlobalUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobalUICommon.h; sourceTree = "<group>"; };
+		3CDA1F0B18C1B93E00AA00C7 /* UISplitViewController+TTNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISplitViewController+TTNavigator.h"; sourceTree = "<group>"; };
+		3CDA1F0C18C1B93E00AA00C7 /* UIView+TTUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TTUICommon.h"; sourceTree = "<group>"; };
+		3CDA1F0D18C1B93E00AA00C7 /* UIViewControllerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerAdditions.h; sourceTree = "<group>"; };
+		3CDA1F0E18C1B93E00AA00C7 /* UIWindowAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWindowAdditions.h; sourceTree = "<group>"; };
+		3CDA1F1118C1B93E00AA00C7 /* TTBaseNavigatorInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseNavigatorInternal.h; sourceTree = "<group>"; };
+		3CDA1F1218C1B93E00AA00C7 /* TTURLArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLArguments.h; sourceTree = "<group>"; };
+		3CDA1F1318C1B93E00AA00C7 /* TTURLArgumentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLArgumentType.h; sourceTree = "<group>"; };
+		3CDA1F1418C1B93E00AA00C7 /* TTURLLiteral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLLiteral.h; sourceTree = "<group>"; };
+		3CDA1F1518C1B93E00AA00C7 /* TTURLPatternInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLPatternInternal.h; sourceTree = "<group>"; };
+		3CDA1F1618C1B93E00AA00C7 /* TTURLPatternText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLPatternText.h; sourceTree = "<group>"; };
+		3CDA1F1718C1B93E00AA00C7 /* TTURLSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLSelector.h; sourceTree = "<group>"; };
+		3CDA1F1818C1B93E00AA00C7 /* TTURLWildcard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLWildcard.h; sourceTree = "<group>"; };
+		3CDA1F1918C1B93E00AA00C7 /* UIViewController+TTNavigatorGarbageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TTNavigatorGarbageCollection.h"; sourceTree = "<group>"; };
+		3CDA1F1A18C1B93E00AA00C7 /* Three20UINavigator+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Three20UINavigator+Additions.h"; sourceTree = "<group>"; };
+		3CDA1F1B18C1B93E00AA00C7 /* Three20UINavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Three20UINavigator.h; sourceTree = "<group>"; };
+		3CDA1F1C18C1B93E00AA00C7 /* TTBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseNavigationController.h; sourceTree = "<group>"; };
+		3CDA1F1D18C1B93E00AA00C7 /* TTBaseNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTBaseNavigator.h; sourceTree = "<group>"; };
+		3CDA1F1E18C1B93E00AA00C7 /* TTGlobalNavigatorMetrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTGlobalNavigatorMetrics.h; sourceTree = "<group>"; };
+		3CDA1F1F18C1B93E00AA00C7 /* TTNavigationMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigationMode.h; sourceTree = "<group>"; };
+		3CDA1F2018C1B93E00AA00C7 /* TTNavigatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigatorDelegate.h; sourceTree = "<group>"; };
+		3CDA1F2118C1B93E00AA00C7 /* TTNavigatorPersistenceMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigatorPersistenceMode.h; sourceTree = "<group>"; };
+		3CDA1F2218C1B93E00AA00C7 /* TTNavigatorRootContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigatorRootContainer.h; sourceTree = "<group>"; };
+		3CDA1F2318C1B93E00AA00C7 /* TTNavigatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTNavigatorViewController.h; sourceTree = "<group>"; };
+		3CDA1F2418C1B93E00AA00C7 /* TTURLAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLAction.h; sourceTree = "<group>"; };
+		3CDA1F2518C1B93E00AA00C7 /* TTURLGeneratorPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLGeneratorPattern.h; sourceTree = "<group>"; };
+		3CDA1F2618C1B93E00AA00C7 /* TTURLMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLMap.h; sourceTree = "<group>"; };
+		3CDA1F2718C1B93E00AA00C7 /* TTURLNavigatorPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLNavigatorPattern.h; sourceTree = "<group>"; };
+		3CDA1F2818C1B93E00AA00C7 /* TTURLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLObject.h; sourceTree = "<group>"; };
+		3CDA1F2918C1B93E00AA00C7 /* TTURLPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTURLPattern.h; sourceTree = "<group>"; };
+		3CDA1F2A18C1B93E00AA00C7 /* UIViewController+TTNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TTNavigator.h"; sourceTree = "<group>"; };
+		3CDA1F2C18C1B93E00AA00C7 /* libThree20.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libThree20.a; sourceTree = "<group>"; };
+		3CDA1F2D18C1B93E00AA00C7 /* libThree20Core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libThree20Core.a; sourceTree = "<group>"; };
+		3CDA1F2E18C1B93E00AA00C7 /* libThree20Network.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libThree20Network.a; sourceTree = "<group>"; };
+		3CDA1F2F18C1B93E00AA00C7 /* libThree20Style.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libThree20Style.a; sourceTree = "<group>"; };
+		3CDA1F3018C1B93E00AA00C7 /* libThree20UI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libThree20UI.a; sourceTree = "<group>"; };
+		3CDA1F3118C1B93E00AA00C7 /* libThree20UICommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libThree20UICommon.a; sourceTree = "<group>"; };
+		3CDA1F3218C1B93E00AA00C7 /* libThree20UINavigator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libThree20UINavigator.a; sourceTree = "<group>"; };
+		3CF8834918C0A0830002412E /* uexImageBrowser.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = uexImageBrowser.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF8834C18C0A0830002412E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3CF884CB18C0A0DA0002412E /* libAppCanEngine_IOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppCanEngine_IOS.a; path = ../libAppCanEngine_IOS.a; sourceTree = "<group>"; };
+		3CF884CD18C0A1330002412E /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		DE6D983F19FA5BB20029F490 /* QBAssetCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetCollectionViewController.h; sourceTree = "<group>"; };
+		DE6D984019FA5BB20029F490 /* QBAssetCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetCollectionViewController.m; sourceTree = "<group>"; };
+		DE6D984119FA5BB20029F490 /* QBAssetCollectionViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetCollectionViewControllerDelegate.h; sourceTree = "<group>"; };
+		DE6D984219FA5BB20029F490 /* QBImagePickerAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerAssetCell.h; sourceTree = "<group>"; };
+		DE6D984319FA5BB20029F490 /* QBImagePickerAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerAssetCell.m; sourceTree = "<group>"; };
+		DE6D984419FA5BB20029F490 /* QBImagePickerAssetCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerAssetCellDelegate.h; sourceTree = "<group>"; };
+		DE6D984519FA5BB20029F490 /* QBImagePickerAssetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerAssetView.h; sourceTree = "<group>"; };
+		DE6D984619FA5BB20029F490 /* QBImagePickerAssetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerAssetView.m; sourceTree = "<group>"; };
+		DE6D984719FA5BB20029F490 /* QBImagePickerAssetViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerAssetViewDelegate.h; sourceTree = "<group>"; };
+		DE6D984819FA5BB20029F490 /* QBImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerController.h; sourceTree = "<group>"; };
+		DE6D984919FA5BB20029F490 /* QBImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerController.m; sourceTree = "<group>"; };
+		DE6D984A19FA5BB20029F490 /* QBImagePickerFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerFooterView.h; sourceTree = "<group>"; };
+		DE6D984B19FA5BB20029F490 /* QBImagePickerFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerFooterView.m; sourceTree = "<group>"; };
+		DE6D984C19FA5BB20029F490 /* QBImagePickerGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerGroupCell.h; sourceTree = "<group>"; };
+		DE6D984D19FA5BB20029F490 /* QBImagePickerGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerGroupCell.m; sourceTree = "<group>"; };
+		DE6D984E19FA5BB20029F490 /* QBImagePickerVideoInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerVideoInfoView.h; sourceTree = "<group>"; };
+		DE6D984F19FA5BB20029F490 /* QBImagePickerVideoInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerVideoInfoView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CF8834618C0A0830002412E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDA1F3C18C1B93E00AA00C7 /* libThree20Network.a in Frameworks */,
+				3CDA1F3A18C1B93E00AA00C7 /* libThree20.a in Frameworks */,
+				3CDA1F3D18C1B93E00AA00C7 /* libThree20Style.a in Frameworks */,
+				3CDA1DE718C1B1B000AA00C7 /* AudioToolbox.framework in Frameworks */,
+				3CDA1F3E18C1B93E00AA00C7 /* libThree20UI.a in Frameworks */,
+				3CDA1DE518C1B1A300AA00C7 /* MobileCoreServices.framework in Frameworks */,
+				3CDA1DE318C1B0FD00AA00C7 /* CoreGraphics.framework in Frameworks */,
+				3CDA1F3F18C1B93E00AA00C7 /* libThree20UICommon.a in Frameworks */,
+				3CDA1DE118C1B0F100AA00C7 /* QuartzCore.framework in Frameworks */,
+				3CDA1DDF18C1B0E100AA00C7 /* MapKit.framework in Frameworks */,
+				3CDA1DDD18C1B0C500AA00C7 /* libsqlite3.dylib in Frameworks */,
+				3CDA1DDB18C1B0BD00AA00C7 /* libz.dylib in Frameworks */,
+				3CDA1DD918C1B0B400AA00C7 /* CoreTelephony.framework in Frameworks */,
+				3CDA1F3B18C1B93E00AA00C7 /* libThree20Core.a in Frameworks */,
+				3CDA1DD718C1B0AE00AA00C7 /* SystemConfiguration.framework in Frameworks */,
+				3CF884CE18C0A1330002412E /* libstdc++.dylib in Frameworks */,
+				3CDA1F4018C1B93E00AA00C7 /* libThree20UINavigator.a in Frameworks */,
+				3CF884CC18C0A0DA0002412E /* libAppCanEngine_IOS.a in Frameworks */,
+				3CF8834D18C0A0830002412E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CDA1DE818C1B93D00AA00C7 /* engineHeader */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1DE918C1B93D00AA00C7 /* EUExBase.h */,
+				3CDA1DEA18C1B93D00AA00C7 /* EUExBaseDefine.h */,
+				3CDA1DEB18C1B93D00AA00C7 /* EUtility.h */,
+			);
+			name = engineHeader;
+			path = EUExImageBrowser/engineHeader;
+			sourceTree = SOURCE_ROOT;
+		};
+		3CDA1DF018C1B93D00AA00C7 /* sourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1DF118C1B93D00AA00C7 /* AppImagePicker.h */,
+				3CDA1DF218C1B93D00AA00C7 /* AppImagePicker.m */,
+				3CDA1DF318C1B93D00AA00C7 /* DeviceImagePicker.h */,
+				3CDA1DF418C1B93D00AA00C7 /* DeviceImagePicker.m */,
+				3CDA1DF518C1B93D00AA00C7 /* DirectShowImageBrowser.h */,
+				3CDA1DF618C1B93D00AA00C7 /* DirectShowImageBrowser.m */,
+				3CDA1DF718C1B93D00AA00C7 /* ImageBrowserViewController.h */,
+				3CDA1DF818C1B93D00AA00C7 /* ImageBrowserViewController.m */,
+				3CDA1DF918C1B93D00AA00C7 /* MockPhotoSource.h */,
+				3CDA1DFA18C1B93D00AA00C7 /* MockPhotoSource.m */,
+				3CDA1DFB18C1B93D00AA00C7 /* SingleImageView.h */,
+				3CDA1DFC18C1B93D00AA00C7 /* SingleImageView.m */,
+			);
+			name = sourceCode;
+			path = EUExImageBrowser/sourceCode;
+			sourceTree = SOURCE_ROOT;
+		};
+		3CDA1DFD18C1B93D00AA00C7 /* three20 */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1DFE18C1B93D00AA00C7 /* Three20 */,
+				3CDA1E0118C1B93D00AA00C7 /* Three20Core */,
+				3CDA1E1C18C1B93D00AA00C7 /* Three20Network */,
+				3CDA1E2F18C1B93D00AA00C7 /* Three20Style */,
+				3CDA1E7218C1B93D00AA00C7 /* Three20UI */,
+				3CDA1F0418C1B93E00AA00C7 /* Three20UICommon */,
+				3CDA1F0F18C1B93E00AA00C7 /* Three20UINavigator */,
+			);
+			name = three20;
+			path = EUExImageBrowser/three20;
+			sourceTree = SOURCE_ROOT;
+		};
+		3CDA1DFE18C1B93D00AA00C7 /* Three20 */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1DFF18C1B93D00AA00C7 /* Three20+Additions.h */,
+				3CDA1E0018C1B93D00AA00C7 /* Three20.h */,
+			);
+			path = Three20;
+			sourceTree = "<group>";
+		};
+		3CDA1E0118C1B93D00AA00C7 /* Three20Core */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1E0218C1B93D00AA00C7 /* NSArrayAdditions.h */,
+				3CDA1E0318C1B93D00AA00C7 /* NSDataAdditions.h */,
+				3CDA1E0418C1B93D00AA00C7 /* NSDateAdditions.h */,
+				3CDA1E0518C1B93D00AA00C7 /* NSMutableArrayAdditions.h */,
+				3CDA1E0618C1B93D00AA00C7 /* NSMutableDictionaryAdditions.h */,
+				3CDA1E0718C1B93D00AA00C7 /* NSObjectAdditions.h */,
+				3CDA1E0818C1B93D00AA00C7 /* NSStringAdditions.h */,
+				3CDA1E0918C1B93D00AA00C7 /* private */,
+				3CDA1E0B18C1B93D00AA00C7 /* Three20.h */,
+				3CDA1E0C18C1B93D00AA00C7 /* Three20Core+Additions.h */,
+				3CDA1E0D18C1B93D00AA00C7 /* Three20Core.h */,
+				3CDA1E0E18C1B93D00AA00C7 /* Three20Version.h */,
+				3CDA1E0F18C1B93D00AA00C7 /* TTAvailability.h */,
+				3CDA1E1018C1B93D00AA00C7 /* TTCorePreprocessorMacros.h */,
+				3CDA1E1118C1B93D00AA00C7 /* TTDebug.h */,
+				3CDA1E1218C1B93D00AA00C7 /* TTDebugFlags.h */,
+				3CDA1E1318C1B93D00AA00C7 /* TTEntityTables.h */,
+				3CDA1E1418C1B93D00AA00C7 /* TTExtensionAuthor.h */,
+				3CDA1E1518C1B93D00AA00C7 /* TTExtensionInfo.h */,
+				3CDA1E1618C1B93D00AA00C7 /* TTExtensionLoader.h */,
+				3CDA1E1718C1B93D00AA00C7 /* TTGlobalCore.h */,
+				3CDA1E1818C1B93D00AA00C7 /* TTGlobalCoreLocale.h */,
+				3CDA1E1918C1B93D00AA00C7 /* TTGlobalCorePaths.h */,
+				3CDA1E1A18C1B93D00AA00C7 /* TTGlobalCoreRects.h */,
+				3CDA1E1B18C1B93D00AA00C7 /* TTMarkupStripper.h */,
+			);
+			path = Three20Core;
+			sourceTree = "<group>";
+		};
+		3CDA1E0918C1B93D00AA00C7 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1E0A18C1B93D00AA00C7 /* TTExtensionInfoPrivate.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		3CDA1E1C18C1B93D00AA00C7 /* Three20Network */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1E1D18C1B93D00AA00C7 /* private */,
+				3CDA1E2018C1B93D00AA00C7 /* Three20Network.h */,
+				3CDA1E2118C1B93D00AA00C7 /* TTErrorCodes.h */,
+				3CDA1E2218C1B93D00AA00C7 /* TTGlobalNetwork.h */,
+				3CDA1E2318C1B93D00AA00C7 /* TTModel.h */,
+				3CDA1E2418C1B93D00AA00C7 /* TTModelDelegate.h */,
+				3CDA1E2518C1B93D00AA00C7 /* TTURLCache.h */,
+				3CDA1E2618C1B93D00AA00C7 /* TTURLDataResponse.h */,
+				3CDA1E2718C1B93D00AA00C7 /* TTURLImageResponse.h */,
+				3CDA1E2818C1B93D00AA00C7 /* TTURLRequest.h */,
+				3CDA1E2918C1B93D00AA00C7 /* TTURLRequestCachePolicy.h */,
+				3CDA1E2A18C1B93D00AA00C7 /* TTURLRequestDelegate.h */,
+				3CDA1E2B18C1B93D00AA00C7 /* TTURLRequestModel.h */,
+				3CDA1E2C18C1B93D00AA00C7 /* TTURLRequestQueue.h */,
+				3CDA1E2D18C1B93D00AA00C7 /* TTURLResponse.h */,
+				3CDA1E2E18C1B93D00AA00C7 /* TTUserInfo.h */,
+			);
+			path = Three20Network;
+			sourceTree = "<group>";
+		};
+		3CDA1E1D18C1B93D00AA00C7 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1E1E18C1B93D00AA00C7 /* TTRequestLoader.h */,
+				3CDA1E1F18C1B93D00AA00C7 /* TTURLRequestQueueInternal.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		3CDA1E2F18C1B93D00AA00C7 /* Three20Style */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1E3018C1B93D00AA00C7 /* private */,
+				3CDA1E3418C1B93D00AA00C7 /* Three20Style+Additions.h */,
+				3CDA1E3518C1B93D00AA00C7 /* Three20Style.h */,
+				3CDA1E3618C1B93D00AA00C7 /* TTBevelBorderStyle.h */,
+				3CDA1E3718C1B93D00AA00C7 /* TTBlendStyle.h */,
+				3CDA1E3818C1B93D00AA00C7 /* TTBoxStyle.h */,
+				3CDA1E3918C1B93D00AA00C7 /* TTContentStyle.h */,
+				3CDA1E3A18C1B93D00AA00C7 /* TTDefaultStyleSheet+DragRefreshHeader.h */,
+				3CDA1E3B18C1B93D00AA00C7 /* TTDefaultStyleSheet.h */,
+				3CDA1E3C18C1B93D00AA00C7 /* TTFlowLayout.h */,
+				3CDA1E3D18C1B93D00AA00C7 /* TTFourBorderStyle.h */,
+				3CDA1E3E18C1B93D00AA00C7 /* TTGlobalStyle.h */,
+				3CDA1E3F18C1B93D00AA00C7 /* TTGridLayout.h */,
+				3CDA1E4018C1B93D00AA00C7 /* TTHighlightBorderStyle.h */,
+				3CDA1E4118C1B93D00AA00C7 /* TTImageStyle.h */,
+				3CDA1E4218C1B93D00AA00C7 /* TTInnerShadowStyle.h */,
+				3CDA1E4318C1B93D00AA00C7 /* TTInsetStyle.h */,
+				3CDA1E4418C1B93D00AA00C7 /* TTLayout.h */,
+				3CDA1E4518C1B93D00AA00C7 /* TTLinearGradientBorderStyle.h */,
+				3CDA1E4618C1B93D00AA00C7 /* TTLinearGradientFillStyle.h */,
+				3CDA1E4718C1B93D00AA00C7 /* TTMaskStyle.h */,
+				3CDA1E4818C1B93D00AA00C7 /* TTPartStyle.h */,
+				3CDA1E4918C1B93D00AA00C7 /* TTPosition.h */,
+				3CDA1E4A18C1B93D00AA00C7 /* TTRectangleShape.h */,
+				3CDA1E4B18C1B93D00AA00C7 /* TTReflectiveFillStyle.h */,
+				3CDA1E4C18C1B93D00AA00C7 /* TTRoundedLeftArrowShape.h */,
+				3CDA1E4D18C1B93D00AA00C7 /* TTRoundedRectangleShape.h */,
+				3CDA1E4E18C1B93D00AA00C7 /* TTRoundedRightArrowShape.h */,
+				3CDA1E4F18C1B93D00AA00C7 /* TTShadowStyle.h */,
+				3CDA1E5018C1B93D00AA00C7 /* TTShape.h */,
+				3CDA1E5118C1B93D00AA00C7 /* TTShapeStyle.h */,
+				3CDA1E5218C1B93D00AA00C7 /* TTSolidBorderStyle.h */,
+				3CDA1E5318C1B93D00AA00C7 /* TTSolidFillStyle.h */,
+				3CDA1E5418C1B93D00AA00C7 /* TTSpeechBubbleShape.h */,
+				3CDA1E5518C1B93D00AA00C7 /* TTStyle.h */,
+				3CDA1E5618C1B93D00AA00C7 /* TTStyleContext.h */,
+				3CDA1E5718C1B93D00AA00C7 /* TTStyledBlock.h */,
+				3CDA1E5818C1B93D00AA00C7 /* TTStyledBoldNode.h */,
+				3CDA1E5918C1B93D00AA00C7 /* TTStyledBoxFrame.h */,
+				3CDA1E5A18C1B93D00AA00C7 /* TTStyledButtonNode.h */,
+				3CDA1E5B18C1B93D00AA00C7 /* TTStyleDelegate.h */,
+				3CDA1E5C18C1B93D00AA00C7 /* TTStyledElement.h */,
+				3CDA1E5D18C1B93D00AA00C7 /* TTStyledFrame.h */,
+				3CDA1E5E18C1B93D00AA00C7 /* TTStyledImageFrame.h */,
+				3CDA1E5F18C1B93D00AA00C7 /* TTStyledImageNode.h */,
+				3CDA1E6018C1B93D00AA00C7 /* TTStyledInline.h */,
+				3CDA1E6118C1B93D00AA00C7 /* TTStyledInlineBlock.h */,
+				3CDA1E6218C1B93D00AA00C7 /* TTStyledInlineFrame.h */,
+				3CDA1E6318C1B93D00AA00C7 /* TTStyledItalicNode.h */,
+				3CDA1E6418C1B93D00AA00C7 /* TTStyledLayout.h */,
+				3CDA1E6518C1B93D00AA00C7 /* TTStyledLineBreakNode.h */,
+				3CDA1E6618C1B93D00AA00C7 /* TTStyledLinkNode.h */,
+				3CDA1E6718C1B93D00AA00C7 /* TTStyledNode.h */,
+				3CDA1E6818C1B93D00AA00C7 /* TTStyledText.h */,
+				3CDA1E6918C1B93D00AA00C7 /* TTStyledTextDelegate.h */,
+				3CDA1E6A18C1B93D00AA00C7 /* TTStyledTextFrame.h */,
+				3CDA1E6B18C1B93D00AA00C7 /* TTStyledTextNode.h */,
+				3CDA1E6C18C1B93D00AA00C7 /* TTStyledTextParser.h */,
+				3CDA1E6D18C1B93D00AA00C7 /* TTStyleSheet.h */,
+				3CDA1E6E18C1B93D00AA00C7 /* TTTextStyle.h */,
+				3CDA1E6F18C1B93D00AA00C7 /* UIColorAdditions.h */,
+				3CDA1E7018C1B93D00AA00C7 /* UIFontAdditions.h */,
+				3CDA1E7118C1B93D00AA00C7 /* UIImageAdditions.h */,
+			);
+			path = Three20Style;
+			sourceTree = "<group>";
+		};
+		3CDA1E3018C1B93D00AA00C7 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1E3118C1B93D00AA00C7 /* TTShapeInternal.h */,
+				3CDA1E3218C1B93D00AA00C7 /* TTStyledNodeInternal.h */,
+				3CDA1E3318C1B93D00AA00C7 /* TTStyleInternal.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		3CDA1E7218C1B93D00AA00C7 /* Three20UI */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1E7318C1B93D00AA00C7 /* private */,
+				3CDA1E7E18C1B93E00AA00C7 /* Three20UI+Additions.h */,
+				3CDA1E7F18C1B93E00AA00C7 /* Three20UI.h */,
+				3CDA1E8018C1B93E00AA00C7 /* TTActionSheet.h */,
+				3CDA1E8118C1B93E00AA00C7 /* TTActionSheetController.h */,
+				3CDA1E8218C1B93E00AA00C7 /* TTActionSheetControllerDelegate.h */,
+				3CDA1E8318C1B93E00AA00C7 /* TTActivityLabel.h */,
+				3CDA1E8418C1B93E00AA00C7 /* TTAlertView.h */,
+				3CDA1E8518C1B93E00AA00C7 /* TTAlertViewController.h */,
+				3CDA1E8618C1B93E00AA00C7 /* TTAlertViewControllerDelegate.h */,
+				3CDA1E8718C1B93E00AA00C7 /* TTButton.h */,
+				3CDA1E8818C1B93E00AA00C7 /* TTButtonBar.h */,
+				3CDA1E8918C1B93E00AA00C7 /* TTErrorView.h */,
+				3CDA1E8A18C1B93E00AA00C7 /* TTExtensionInfoController.h */,
+				3CDA1E8B18C1B93E00AA00C7 /* TTExtensionsController.h */,
+				3CDA1E8C18C1B93E00AA00C7 /* TTImageView.h */,
+				3CDA1E8D18C1B93E00AA00C7 /* TTImageViewDelegate.h */,
+				3CDA1E8E18C1B93E00AA00C7 /* TTLabel.h */,
+				3CDA1E8F18C1B93E00AA00C7 /* TTLauncherButton.h */,
+				3CDA1E9018C1B93E00AA00C7 /* TTLauncherItem.h */,
+				3CDA1E9118C1B93E00AA00C7 /* TTLauncherPersistenceMode.h */,
+				3CDA1E9218C1B93E00AA00C7 /* TTLauncherView.h */,
+				3CDA1E9318C1B93E00AA00C7 /* TTLauncherViewDelegate.h */,
+				3CDA1E9418C1B93E00AA00C7 /* TTLink.h */,
+				3CDA1E9518C1B93E00AA00C7 /* TTListDataSource.h */,
+				3CDA1E9618C1B93E00AA00C7 /* TTMessageController.h */,
+				3CDA1E9718C1B93E00AA00C7 /* TTMessageControllerDelegate.h */,
+				3CDA1E9818C1B93E00AA00C7 /* TTMessageField.h */,
+				3CDA1E9918C1B93E00AA00C7 /* TTMessageRecipientField.h */,
+				3CDA1E9A18C1B93E00AA00C7 /* TTMessageSubjectField.h */,
+				3CDA1E9B18C1B93E00AA00C7 /* TTMessageTextField.h */,
+				3CDA1E9C18C1B93E00AA00C7 /* TTModelViewController.h */,
+				3CDA1E9D18C1B93E00AA00C7 /* TTNavigationController.h */,
+				3CDA1E9E18C1B93E00AA00C7 /* TTNavigator.h */,
+				3CDA1E9F18C1B93E00AA00C7 /* TTPageControl.h */,
+				3CDA1EA018C1B93E00AA00C7 /* TTPhoto.h */,
+				3CDA1EA118C1B93E00AA00C7 /* TTPhotoSource.h */,
+				3CDA1EA218C1B93E00AA00C7 /* TTPhotoVersion.h */,
+				3CDA1EA318C1B93E00AA00C7 /* TTPhotoView.h */,
+				3CDA1EA418C1B93E00AA00C7 /* TTPhotoViewController.h */,
+				3CDA1EA518C1B93E00AA00C7 /* TTPickerTextField.h */,
+				3CDA1EA618C1B93E00AA00C7 /* TTPickerTextFieldDelegate.h */,
+				3CDA1EA718C1B93E00AA00C7 /* TTPickerViewCell.h */,
+				3CDA1EA818C1B93E00AA00C7 /* TTPopupViewController.h */,
+				3CDA1EA918C1B93E00AA00C7 /* TTPostController.h */,
+				3CDA1EAA18C1B93E00AA00C7 /* TTPostControllerDelegate.h */,
+				3CDA1EAB18C1B93E00AA00C7 /* TTRecursiveProgress.h */,
+				3CDA1EAC18C1B93E00AA00C7 /* TTScrollView.h */,
+				3CDA1EAD18C1B93E00AA00C7 /* TTScrollViewDataSource.h */,
+				3CDA1EAE18C1B93E00AA00C7 /* TTScrollViewDelegate.h */,
+				3CDA1EAF18C1B93E00AA00C7 /* TTSearchBar.h */,
+				3CDA1EB018C1B93E00AA00C7 /* TTSearchDisplayController.h */,
+				3CDA1EB118C1B93E00AA00C7 /* TTSearchlightLabel.h */,
+				3CDA1EB218C1B93E00AA00C7 /* TTSearchTextField.h */,
+				3CDA1EB318C1B93E00AA00C7 /* TTSearchTextFieldDelegate.h */,
+				3CDA1EB418C1B93E00AA00C7 /* TTSectionedDataSource.h */,
+				3CDA1EB518C1B93E00AA00C7 /* TTSplitViewController.h */,
+				3CDA1EB618C1B93E00AA00C7 /* TTStyledTextLabel.h */,
+				3CDA1EB718C1B93E00AA00C7 /* TTStyledTextTableCell.h */,
+				3CDA1EB818C1B93E00AA00C7 /* TTStyledTextTableItemCell.h */,
+				3CDA1EB918C1B93E00AA00C7 /* TTTab.h */,
+				3CDA1EBA18C1B93E00AA00C7 /* TTTabBar.h */,
+				3CDA1EBB18C1B93E00AA00C7 /* TTTabDelegate.h */,
+				3CDA1EBC18C1B93E00AA00C7 /* TTTabGrid.h */,
+				3CDA1EBD18C1B93E00AA00C7 /* TTTabItem.h */,
+				3CDA1EBE18C1B93E00AA00C7 /* TTTableActivityItem.h */,
+				3CDA1EBF18C1B93E00AA00C7 /* TTTableActivityItemCell.h */,
+				3CDA1EC018C1B93E00AA00C7 /* TTTableButton.h */,
+				3CDA1EC118C1B93E00AA00C7 /* TTTableCaptionItem.h */,
+				3CDA1EC218C1B93E00AA00C7 /* TTTableCaptionItemCell.h */,
+				3CDA1EC318C1B93E00AA00C7 /* TTTableControlCell.h */,
+				3CDA1EC418C1B93E00AA00C7 /* TTTableControlItem.h */,
+				3CDA1EC518C1B93E00AA00C7 /* TTTableFlushViewCell.h */,
+				3CDA1EC618C1B93E00AA00C7 /* TTTableFooterInfiniteScrollView.h */,
+				3CDA1EC718C1B93E00AA00C7 /* TTTableGrayTextItem.h */,
+				3CDA1EC818C1B93E00AA00C7 /* TTTableHeaderDragRefreshView.h */,
+				3CDA1EC918C1B93E00AA00C7 /* TTTableHeaderView.h */,
+				3CDA1ECA18C1B93E00AA00C7 /* TTTableImageItem.h */,
+				3CDA1ECB18C1B93E00AA00C7 /* TTTableImageItemCell.h */,
+				3CDA1ECC18C1B93E00AA00C7 /* TTTableItem.h */,
+				3CDA1ECD18C1B93E00AA00C7 /* TTTableLink.h */,
+				3CDA1ECE18C1B93E00AA00C7 /* TTTableLinkedItem.h */,
+				3CDA1ECF18C1B93E00AA00C7 /* TTTableLinkedItemCell.h */,
+				3CDA1ED018C1B93E00AA00C7 /* TTTableLongTextItem.h */,
+				3CDA1ED118C1B93E00AA00C7 /* TTTableMessageItem.h */,
+				3CDA1ED218C1B93E00AA00C7 /* TTTableMessageItemCell.h */,
+				3CDA1ED318C1B93E00AA00C7 /* TTTableMoreButton.h */,
+				3CDA1ED418C1B93E00AA00C7 /* TTTableMoreButtonCell.h */,
+				3CDA1ED518C1B93E00AA00C7 /* TTTableRightCaptionItem.h */,
+				3CDA1ED618C1B93E00AA00C7 /* TTTableRightCaptionItemCell.h */,
+				3CDA1ED718C1B93E00AA00C7 /* TTTableRightImageItem.h */,
+				3CDA1ED818C1B93E00AA00C7 /* TTTableStyledTextItem.h */,
+				3CDA1ED918C1B93E00AA00C7 /* TTTableSubtextItem.h */,
+				3CDA1EDA18C1B93E00AA00C7 /* TTTableSubtextItemCell.h */,
+				3CDA1EDB18C1B93E00AA00C7 /* TTTableSubtitleItem.h */,
+				3CDA1EDC18C1B93E00AA00C7 /* TTTableSubtitleItemCell.h */,
+				3CDA1EDD18C1B93E00AA00C7 /* TTTableSummaryItem.h */,
+				3CDA1EDE18C1B93E00AA00C7 /* TTTableTextItem.h */,
+				3CDA1EDF18C1B93E00AA00C7 /* TTTableTextItemCell.h */,
+				3CDA1EE018C1B93E00AA00C7 /* TTTableView.h */,
+				3CDA1EE118C1B93E00AA00C7 /* TTTableViewCell.h */,
+				3CDA1EE218C1B93E00AA00C7 /* TTTableViewController.h */,
+				3CDA1EE318C1B93E00AA00C7 /* TTTableViewDataSource.h */,
+				3CDA1EE418C1B93E00AA00C7 /* TTTableViewDelegate.h */,
+				3CDA1EE518C1B93E00AA00C7 /* TTTableViewDragRefreshDelegate.h */,
+				3CDA1EE618C1B93E00AA00C7 /* TTTableViewGroupedVarHeightDelegate.h */,
+				3CDA1EE718C1B93E00AA00C7 /* TTTableViewItem.h */,
+				3CDA1EE818C1B93E00AA00C7 /* TTTableViewNetworkEnabledDelegate.h */,
+				3CDA1EE918C1B93E00AA00C7 /* TTTableViewPlainDelegate.h */,
+				3CDA1EEA18C1B93E00AA00C7 /* TTTableViewPlainVarHeightDelegate.h */,
+				3CDA1EEB18C1B93E00AA00C7 /* TTTableViewVarHeightDelegate.h */,
+				3CDA1EEC18C1B93E00AA00C7 /* TTTabStrip.h */,
+				3CDA1EED18C1B93E00AA00C7 /* TTTextBarController.h */,
+				3CDA1EEE18C1B93E00AA00C7 /* TTTextBarDelegate.h */,
+				3CDA1EEF18C1B93E00AA00C7 /* TTTextEditor.h */,
+				3CDA1EF018C1B93E00AA00C7 /* TTTextEditorDelegate.h */,
+				3CDA1EF118C1B93E00AA00C7 /* TTThumbsDataSource.h */,
+				3CDA1EF218C1B93E00AA00C7 /* TTThumbsTableViewCell.h */,
+				3CDA1EF318C1B93E00AA00C7 /* TTThumbsTableViewCellDelegate.h */,
+				3CDA1EF418C1B93E00AA00C7 /* TTThumbsViewController.h */,
+				3CDA1EF518C1B93E00AA00C7 /* TTThumbsViewControllerDelegate.h */,
+				3CDA1EF618C1B93E00AA00C7 /* TTThumbView.h */,
+				3CDA1EF718C1B93E00AA00C7 /* TTUnclippedView.h */,
+				3CDA1EF818C1B93E00AA00C7 /* TTView.h */,
+				3CDA1EF918C1B93E00AA00C7 /* TTViewController.h */,
+				3CDA1EFA18C1B93E00AA00C7 /* TTWebController.h */,
+				3CDA1EFB18C1B93E00AA00C7 /* TTYouTubeView.h */,
+				3CDA1EFC18C1B93E00AA00C7 /* UINavigationControllerAdditions.h */,
+				3CDA1EFD18C1B93E00AA00C7 /* UINSObjectAdditions.h */,
+				3CDA1EFE18C1B93E00AA00C7 /* UINSStringAdditions.h */,
+				3CDA1EFF18C1B93E00AA00C7 /* UITabBarControllerAdditions.h */,
+				3CDA1F0018C1B93E00AA00C7 /* UITableViewAdditions.h */,
+				3CDA1F0118C1B93E00AA00C7 /* UIToolbarAdditions.h */,
+				3CDA1F0218C1B93E00AA00C7 /* UIViewAdditions.h */,
+				3CDA1F0318C1B93E00AA00C7 /* UIWebViewAdditions.h */,
+			);
+			path = Three20UI;
+			sourceTree = "<group>";
+		};
+		3CDA1E7318C1B93D00AA00C7 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1E7418C1B93D00AA00C7 /* TTButtonContent.h */,
+				3CDA1E7518C1B93D00AA00C7 /* TTImageLayer.h */,
+				3CDA1E7618C1B93E00AA00C7 /* TTImageViewInternal.h */,
+				3CDA1E7718C1B93E00AA00C7 /* TTLauncherHighlightView.h */,
+				3CDA1E7818C1B93E00AA00C7 /* TTLauncherScrollView.h */,
+				3CDA1E7918C1B93E00AA00C7 /* TTNavigatorWindow.h */,
+				3CDA1E7A18C1B93E00AA00C7 /* TTSearchTextFieldInternal.h */,
+				3CDA1E7B18C1B93E00AA00C7 /* TTTabBarInternal.h */,
+				3CDA1E7C18C1B93E00AA00C7 /* TTTextEditorInternal.h */,
+				3CDA1E7D18C1B93E00AA00C7 /* TTTextView.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		3CDA1F0418C1B93E00AA00C7 /* Three20UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1F0518C1B93E00AA00C7 /* private */,
+				3CDA1F0718C1B93E00AA00C7 /* Three20UICommon+Additions.h */,
+				3CDA1F0818C1B93E00AA00C7 /* Three20UICommon.h */,
+				3CDA1F0918C1B93E00AA00C7 /* TTBaseViewController.h */,
+				3CDA1F0A18C1B93E00AA00C7 /* TTGlobalUICommon.h */,
+				3CDA1F0B18C1B93E00AA00C7 /* UISplitViewController+TTNavigator.h */,
+				3CDA1F0C18C1B93E00AA00C7 /* UIView+TTUICommon.h */,
+				3CDA1F0D18C1B93E00AA00C7 /* UIViewControllerAdditions.h */,
+				3CDA1F0E18C1B93E00AA00C7 /* UIWindowAdditions.h */,
+			);
+			path = Three20UICommon;
+			sourceTree = "<group>";
+		};
+		3CDA1F0518C1B93E00AA00C7 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1F0618C1B93E00AA00C7 /* UIViewControllerGarbageCollection.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		3CDA1F0F18C1B93E00AA00C7 /* Three20UINavigator */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1F1018C1B93E00AA00C7 /* private */,
+				3CDA1F1A18C1B93E00AA00C7 /* Three20UINavigator+Additions.h */,
+				3CDA1F1B18C1B93E00AA00C7 /* Three20UINavigator.h */,
+				3CDA1F1C18C1B93E00AA00C7 /* TTBaseNavigationController.h */,
+				3CDA1F1D18C1B93E00AA00C7 /* TTBaseNavigator.h */,
+				3CDA1F1E18C1B93E00AA00C7 /* TTGlobalNavigatorMetrics.h */,
+				3CDA1F1F18C1B93E00AA00C7 /* TTNavigationMode.h */,
+				3CDA1F2018C1B93E00AA00C7 /* TTNavigatorDelegate.h */,
+				3CDA1F2118C1B93E00AA00C7 /* TTNavigatorPersistenceMode.h */,
+				3CDA1F2218C1B93E00AA00C7 /* TTNavigatorRootContainer.h */,
+				3CDA1F2318C1B93E00AA00C7 /* TTNavigatorViewController.h */,
+				3CDA1F2418C1B93E00AA00C7 /* TTURLAction.h */,
+				3CDA1F2518C1B93E00AA00C7 /* TTURLGeneratorPattern.h */,
+				3CDA1F2618C1B93E00AA00C7 /* TTURLMap.h */,
+				3CDA1F2718C1B93E00AA00C7 /* TTURLNavigatorPattern.h */,
+				3CDA1F2818C1B93E00AA00C7 /* TTURLObject.h */,
+				3CDA1F2918C1B93E00AA00C7 /* TTURLPattern.h */,
+				3CDA1F2A18C1B93E00AA00C7 /* UIViewController+TTNavigator.h */,
+			);
+			path = Three20UINavigator;
+			sourceTree = "<group>";
+		};
+		3CDA1F1018C1B93E00AA00C7 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1F1118C1B93E00AA00C7 /* TTBaseNavigatorInternal.h */,
+				3CDA1F1218C1B93E00AA00C7 /* TTURLArguments.h */,
+				3CDA1F1318C1B93E00AA00C7 /* TTURLArgumentType.h */,
+				3CDA1F1418C1B93E00AA00C7 /* TTURLLiteral.h */,
+				3CDA1F1518C1B93E00AA00C7 /* TTURLPatternInternal.h */,
+				3CDA1F1618C1B93E00AA00C7 /* TTURLPatternText.h */,
+				3CDA1F1718C1B93E00AA00C7 /* TTURLSelector.h */,
+				3CDA1F1818C1B93E00AA00C7 /* TTURLWildcard.h */,
+				3CDA1F1918C1B93E00AA00C7 /* UIViewController+TTNavigatorGarbageCollection.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		3CDA1F2B18C1B93E00AA00C7 /* three20Device */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1F2C18C1B93E00AA00C7 /* libThree20.a */,
+				3CDA1F2D18C1B93E00AA00C7 /* libThree20Core.a */,
+				3CDA1F2E18C1B93E00AA00C7 /* libThree20Network.a */,
+				3CDA1F2F18C1B93E00AA00C7 /* libThree20Style.a */,
+				3CDA1F3018C1B93E00AA00C7 /* libThree20UI.a */,
+				3CDA1F3118C1B93E00AA00C7 /* libThree20UICommon.a */,
+				3CDA1F3218C1B93E00AA00C7 /* libThree20UINavigator.a */,
+			);
+			name = three20Device;
+			path = EUExImageBrowser/three20Device;
+			sourceTree = SOURCE_ROOT;
+		};
+		3CF8834018C0A0830002412E = {
+			isa = PBXGroup;
+			children = (
+				DE6D983E19FA5BB20029F490 /* pickMultiClasses */,
+				3CF8834E18C0A0830002412E /* uexImageBrowser */,
+				3CF8834B18C0A0830002412E /* Frameworks */,
+				3CF8834A18C0A0830002412E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CF8834A18C0A0830002412E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CF8834918C0A0830002412E /* uexImageBrowser.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CF8834B18C0A0830002412E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1DE618C1B1B000AA00C7 /* AudioToolbox.framework */,
+				3CDA1DE418C1B1A300AA00C7 /* MobileCoreServices.framework */,
+				3CDA1DE218C1B0FD00AA00C7 /* CoreGraphics.framework */,
+				3CDA1DE018C1B0F100AA00C7 /* QuartzCore.framework */,
+				3CDA1DDE18C1B0E100AA00C7 /* MapKit.framework */,
+				3CDA1DDC18C1B0C500AA00C7 /* libsqlite3.dylib */,
+				3CDA1DDA18C1B0BD00AA00C7 /* libz.dylib */,
+				3CDA1DD818C1B0B400AA00C7 /* CoreTelephony.framework */,
+				3CDA1DD618C1B0AE00AA00C7 /* SystemConfiguration.framework */,
+				3CF884CD18C0A1330002412E /* libstdc++.dylib */,
+				3CF884CB18C0A0DA0002412E /* libAppCanEngine_IOS.a */,
+				3CF8834C18C0A0830002412E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CF8834E18C0A0830002412E /* uexImageBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				3CDA1DE818C1B93D00AA00C7 /* engineHeader */,
+				3CDA1DEC18C1B93D00AA00C7 /* EUExImageBrowser-Prefix.pch */,
+				3CDA1DED18C1B93D00AA00C7 /* EUExImageBrowser.h */,
+				3CDA1DEE18C1B93D00AA00C7 /* EUExImageBrowser.m */,
+				3CDA1DEF18C1B93D00AA00C7 /* note.txt */,
+				3CDA1DF018C1B93D00AA00C7 /* sourceCode */,
+				3CDA1DFD18C1B93D00AA00C7 /* three20 */,
+				3CDA1F2B18C1B93E00AA00C7 /* three20Device */,
+			);
+			path = uexImageBrowser;
+			sourceTree = "<group>";
+		};
+		DE6D983E19FA5BB20029F490 /* pickMultiClasses */ = {
+			isa = PBXGroup;
+			children = (
+				DE6D983F19FA5BB20029F490 /* QBAssetCollectionViewController.h */,
+				DE6D984019FA5BB20029F490 /* QBAssetCollectionViewController.m */,
+				DE6D984119FA5BB20029F490 /* QBAssetCollectionViewControllerDelegate.h */,
+				DE6D984219FA5BB20029F490 /* QBImagePickerAssetCell.h */,
+				DE6D984319FA5BB20029F490 /* QBImagePickerAssetCell.m */,
+				DE6D984419FA5BB20029F490 /* QBImagePickerAssetCellDelegate.h */,
+				DE6D984519FA5BB20029F490 /* QBImagePickerAssetView.h */,
+				DE6D984619FA5BB20029F490 /* QBImagePickerAssetView.m */,
+				DE6D984719FA5BB20029F490 /* QBImagePickerAssetViewDelegate.h */,
+				DE6D984819FA5BB20029F490 /* QBImagePickerController.h */,
+				DE6D984919FA5BB20029F490 /* QBImagePickerController.m */,
+				DE6D984A19FA5BB20029F490 /* QBImagePickerFooterView.h */,
+				DE6D984B19FA5BB20029F490 /* QBImagePickerFooterView.m */,
+				DE6D984C19FA5BB20029F490 /* QBImagePickerGroupCell.h */,
+				DE6D984D19FA5BB20029F490 /* QBImagePickerGroupCell.m */,
+				DE6D984E19FA5BB20029F490 /* QBImagePickerVideoInfoView.h */,
+				DE6D984F19FA5BB20029F490 /* QBImagePickerVideoInfoView.m */,
+			);
+			name = pickMultiClasses;
+			path = EUExImageBrowser/pickMultiClasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CF8834818C0A0830002412E /* uexImageBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CF8836C18C0A0830002412E /* Build configuration list for PBXNativeTarget "uexImageBrowser" */;
+			buildPhases = (
+				3CF8834518C0A0830002412E /* Sources */,
+				3CF8834618C0A0830002412E /* Frameworks */,
+				3CF8834718C0A0830002412E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uexImageBrowser;
+			productName = uexImageBrowser;
+			productReference = 3CF8834918C0A0830002412E /* uexImageBrowser.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CF8834118C0A0830002412E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = demo;
+			};
+			buildConfigurationList = 3CF8834418C0A0830002412E /* Build configuration list for PBXProject "uexImageBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3CF8834018C0A0830002412E;
+			productRefGroup = 3CF8834A18C0A0830002412E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CF8834818C0A0830002412E /* uexImageBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CF8834518C0A0830002412E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDA1F3918C1B93E00AA00C7 /* SingleImageView.m in Sources */,
+				DE6D985319FA5BB20029F490 /* QBImagePickerController.m in Sources */,
+				3CDA1F3318C1B93E00AA00C7 /* EUExImageBrowser.m in Sources */,
+				3CDA1F3418C1B93E00AA00C7 /* AppImagePicker.m in Sources */,
+				3CDA1F3618C1B93E00AA00C7 /* DirectShowImageBrowser.m in Sources */,
+				3CDA1F3818C1B93E00AA00C7 /* MockPhotoSource.m in Sources */,
+				DE6D985419FA5BB20029F490 /* QBImagePickerFooterView.m in Sources */,
+				DE6D985119FA5BB20029F490 /* QBImagePickerAssetCell.m in Sources */,
+				3CDA1F3518C1B93E00AA00C7 /* DeviceImagePicker.m in Sources */,
+				DE6D985019FA5BB20029F490 /* QBAssetCollectionViewController.m in Sources */,
+				DE6D985219FA5BB20029F490 /* QBImagePickerAssetView.m in Sources */,
+				3CDA1F3718C1B93E00AA00C7 /* ImageBrowserViewController.m in Sources */,
+				DE6D985519FA5BB20029F490 /* QBImagePickerGroupCell.m in Sources */,
+				DE6D985619FA5BB20029F490 /* QBImagePickerVideoInfoView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3CF8836A18C0A0830002412E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Zhengyi Wireless(Beijing) Technology Co., Ltd.";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexImageBrowser/";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		3CF8836B18C0A0830002412E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Zhengyi Wireless(Beijing) Technology Co., Ltd.";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexImageBrowser/";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+		3CF8836D18C0A0830002412E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: leilei xu (T8E4RVNP82)";
+				DSTROOT = /tmp/uexImageBrowser.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EUExImageBrowser/EUExImageBrowser-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/EUExImageBrowser/three20",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/EUExImageBrowser/three20Device",
+					"$(SRCROOT)/../",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		3CF8836E18C0A0830002412E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: leilei xu (T8E4RVNP82)";
+				DSTROOT = /tmp/uexImageBrowser.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EUExImageBrowser/EUExImageBrowser-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/EUExImageBrowser/three20",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/EUExImageBrowser/three20Device",
+					"$(SRCROOT)/../",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CF8834418C0A0830002412E /* Build configuration list for PBXProject "uexImageBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF8836A18C0A0830002412E /* Debug */,
+				3CF8836B18C0A0830002412E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CF8836C18C0A0830002412E /* Build configuration list for PBXNativeTarget "uexImageBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CF8836D18C0A0830002412E /* Debug */,
+				3CF8836E18C0A0830002412E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CF8834118C0A0830002412E /* Project object */;
+}
