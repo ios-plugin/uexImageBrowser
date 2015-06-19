@@ -38,7 +38,7 @@
         aImageObj = nil;
     }
     if (pathArray) {
-        self.PathArray = nil;
+        self.pathArray = nil;
     }
     [super dealloc];
 }
@@ -53,7 +53,7 @@
         aImageObj = nil;
     }
     if (pathArray) {
-        self.PathArray = nil;
+        self.pathArray = nil;
     }
 }
 
@@ -67,11 +67,21 @@
         aImageObj = nil;
     }
     if (pathArray) {
-        self.PathArray = nil;
+        self.pathArray = nil;
     }
 }
 
 -(void)open:(NSMutableArray *)inArguments{
+    NSString *statusBar = nil;
+    initialStatusBarStyle=[UIApplication sharedApplication].statusBarStyle;
+    if (initialStatusBarStyle==UIStatusBarStyleDefault) {
+        statusBar = @"0";
+    }else{
+        statusBar = @"1";
+    }
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:statusBar forKey:@"StatusBarStyle"];
+    [defaults synchronize];
     NSString *inUrlStr = [[inArguments objectAtIndex:0] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSArray *inImageArr = [inUrlStr componentsSeparatedByString:@","];
     NSString *idxStr = nil;
