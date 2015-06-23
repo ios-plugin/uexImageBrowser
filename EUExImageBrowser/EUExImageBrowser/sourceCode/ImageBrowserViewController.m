@@ -46,7 +46,17 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    UIStatusBarStyle initialStatusBarStyle;
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *statusBar = [defaults objectForKey:@"StatusBarStyle"];
+    if ([statusBar isEqualToString:@"0"]) {
+        initialStatusBarStyle = UIStatusBarStyleDefault;
+    }else{
+        initialStatusBarStyle = UIStatusBarStyleLightContent;
+    }
+    [[UIApplication sharedApplication] setStatusBarStyle:initialStatusBarStyle];
+
 }
 
 @end

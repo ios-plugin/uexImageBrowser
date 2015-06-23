@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <uexplugins>
     <plugin
-        uexName="uexImageBrowser" version="3.0.16" build="16">
-         <info>16:增加uexImageBrowser.cropImage()图片截取功能</info>
+        uexName="uexImageBrowser" version="3.0.17" build="17">
+         <info>17:修改浏览图片时与退出后的状态栏的颜色不统一。</info>
+         <build>16:增加uexImageBrowser.cropImage()图片截取功能</build>
         <build>15:修复uexImageBrowser.pick选取图片质量变差和状态栏会改变的问题</build>
         <build>14:修复uexImageBrowser调用打开图片浏览器会把白色字体的状态栏改成黑色字体的问题</build>
         <build>13:解决uexImageBrowser插件使用Three20框架，加载网络图片失败的问题</build>
