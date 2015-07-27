@@ -44,6 +44,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		421128571B65F24E00FABACA /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		421128581B65F24E00FABACA /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
+		421128591B65F24E00FABACA /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		4211285A1B65F24E00FABACA /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		4211285B1B65F24E00FABACA /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		4211285C1B65F24E00FABACA /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		4211285D1B65F24E00FABACA /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		4211285E1B65F24E00FABACA /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		5A50129E188FBA540022E07C /* libuexImageBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexImageBrowser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5012A1188FBA540022E07C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A5012A5188FBA540022E07C /* EUExImageBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EUExImageBrowser-Prefix.pch"; sourceTree = "<group>"; };
@@ -397,6 +405,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		421128561B65F24E00FABACA /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				421128571B65F24E00FABACA /* JSON.h */,
+				421128581B65F24E00FABACA /* JSONParser.h */,
+				421128591B65F24E00FABACA /* NSObject+SBJSON.h */,
+				4211285A1B65F24E00FABACA /* NSString+SBJSON.h */,
+				4211285B1B65F24E00FABACA /* SBJSON.h */,
+				4211285C1B65F24E00FABACA /* SBJsonBase.h */,
+				4211285D1B65F24E00FABACA /* SBJsonParser.h */,
+				4211285E1B65F24E00FABACA /* SBJsonWriter.h */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		5A501295188FBA540022E07C = {
 			isa = PBXGroup;
 			children = (
@@ -458,6 +481,7 @@
 		5A5012CB188FBAB70022E07C /* sourceCode */ = {
 			isa = PBXGroup;
 			children = (
+				421128561B65F24E00FABACA /* JSON */,
 				5A5012CC188FBAB70022E07C /* AppImagePicker.h */,
 				5A5012CD188FBAB70022E07C /* AppImagePicker.m */,
 				5A5012CE188FBAB70022E07C /* DeviceImagePicker.h */,

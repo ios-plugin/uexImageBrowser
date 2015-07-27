@@ -382,6 +382,14 @@
 		3CF8834C18C0A0830002412E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3CF884CB18C0A0DA0002412E /* libAppCanEngine_IOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAppCanEngine_IOS.a; path = ../libAppCanEngine_IOS.a; sourceTree = "<group>"; };
 		3CF884CD18C0A1330002412E /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		421128601B65F96700FABACA /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		421128611B65F96700FABACA /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
+		421128621B65F96700FABACA /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		421128631B65F96700FABACA /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		421128641B65F96700FABACA /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		421128651B65F96700FABACA /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		421128661B65F96700FABACA /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		421128671B65F96700FABACA /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		DE6D983F19FA5BB20029F490 /* QBAssetCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetCollectionViewController.h; sourceTree = "<group>"; };
 		DE6D984019FA5BB20029F490 /* QBAssetCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetCollectionViewController.m; sourceTree = "<group>"; };
 		DE6D984119FA5BB20029F490 /* QBAssetCollectionViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetCollectionViewControllerDelegate.h; sourceTree = "<group>"; };
@@ -445,6 +453,7 @@
 		3CDA1DF018C1B93D00AA00C7 /* sourceCode */ = {
 			isa = PBXGroup;
 			children = (
+				4211285F1B65F96700FABACA /* JSON */,
 				3CDA1DF118C1B93D00AA00C7 /* AppImagePicker.h */,
 				3CDA1DF218C1B93D00AA00C7 /* AppImagePicker.m */,
 				3CDA1DF318C1B93D00AA00C7 /* DeviceImagePicker.h */,
@@ -927,6 +936,21 @@
 				3CDA1F2B18C1B93E00AA00C7 /* three20Device */,
 			);
 			path = uexImageBrowser;
+			sourceTree = "<group>";
+		};
+		4211285F1B65F96700FABACA /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				421128601B65F96700FABACA /* JSON.h */,
+				421128611B65F96700FABACA /* JSONParser.h */,
+				421128621B65F96700FABACA /* NSObject+SBJSON.h */,
+				421128631B65F96700FABACA /* NSString+SBJSON.h */,
+				421128641B65F96700FABACA /* SBJSON.h */,
+				421128651B65F96700FABACA /* SBJsonBase.h */,
+				421128661B65F96700FABACA /* SBJsonParser.h */,
+				421128671B65F96700FABACA /* SBJsonWriter.h */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		DE6D983E19FA5BB20029F490 /* pickMultiClasses */ = {

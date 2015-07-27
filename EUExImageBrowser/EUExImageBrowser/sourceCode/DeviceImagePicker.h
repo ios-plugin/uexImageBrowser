@@ -15,6 +15,7 @@
 	UIPopoverController *popController;
 }
 @property(nonatomic, retain)UIPopoverController *popController;
--(id)initWithEuex:(EUExImageBrowser *)euexObj_;
+@property(nonatomic,assign)BOOL isLossless;
+-(id)initWithEuex:(EUExImageBrowser *)euexObj_ isLossless:(BOOL)isLossless;
 -(void)openDicm;
 @end

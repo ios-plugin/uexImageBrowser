@@ -9,6 +9,7 @@
 #import "EUExImageBrowser.h"
 #import "EUExBase.h"
 #import "EUtility.h"
+#import "JSON.h"
 
 
 @implementation EUExImageBrowser
@@ -152,7 +153,17 @@
 
 -(void)pick:(NSMutableArray *)inArguments{
     initialStatusBarStyle=[UIApplication sharedApplication].statusBarStyle;
-    dImageObj = [[DeviceImagePicker alloc] initWithEuex:self];
+    BOOL isLossless=NO;
+    if([inArguments count]>0){
+        id info=[inArguments[0] JSONValue];
+        if([info isKindOfClass:[NSDictionary class]]&&[info objectForKey:@"isLossless"]){
+            if([[info objectForKey:@"isLossless"] boolValue]||[[info objectForKey:@"isLossless"] isEqual:@"true"]){
+                isLossless=YES;
+            }
+        }
+    }
+
+    dImageObj = [[DeviceImagePicker alloc] initWithEuex:self isLossless:isLossless];
     [dImageObj openDicm];
 }
 
