@@ -32,18 +32,32 @@
     
     if([[info objectForKey:UIImagePickerControllerMediaType] isEqualToString:@"public.image"]){
         
+        UIImage *checkImg = [info objectForKey:UIImagePickerControllerOriginalImage];
+        NSLog(@"**********》》》》》》imageBrower插件----------++++==>>>>>>>>>>图片的方向信息:%ld",(long)checkImg.imageOrientation);
+        if (checkImg.imageOrientation==UIImageOrientationUp)
+        {
+            
+        }else if(checkImg.imageOrientation==UIImageOrientationRight)
+        {
+            
+            checkImg = [UIImage imageWithCGImage:checkImg.CGImage scale:1.0 orientation:UIImageOrientationRight];
+            checkImg = [self fixOrientation:checkImg];
+        }
+        
+        NSLog(@"%ld",(long)checkImg.imageOrientation);
+        
         
         if(self.isLossless){
             ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
             [library assetForURL:[info objectForKey:UIImagePickerControllerReferenceURL]
                      resultBlock:^(ALAsset *asset)
              {
-                 ALAssetRepresentation *representation = [asset defaultRepresentation];
-                 CGImageRef imgRef = [representation fullResolutionImage];
-                 UIImage *image = [UIImage imageWithCGImage:imgRef
-                                                      scale:representation.scale
-                                                orientation:(UIImageOrientation)representation.orientation];
-                 NSData *imageData=UIImageJPEGRepresentation(image,1);
+                 //                 ALAssetRepresentation *representation = [asset defaultRepresentation];
+                 //                 CGImageRef imgRef = [representation fullResolutionImage];
+                 //                 UIImage *image = [UIImage imageWithCGImage:imgRef
+                 //                                                      scale:representation.scale
+                 //                                                orientation:(UIImageOrientation)representation.orientation];
+                 NSData *imageData=UIImageJPEGRepresentation(checkImg,1);
                  [self cbPickWithData:imageData PickerController:picker];
              }failureBlock:^(NSError *error){
                  NSLog(@"cannot get asset:%@",[error localizedDescription]);
@@ -51,13 +65,90 @@
             
             
         }else{
-            UIImage *checkImg= [info objectForKey:UIImagePickerControllerOriginalImage];
+            
+            //            UIImage *checkImg= [info objectForKey:UIImagePickerControllerOriginalImage];
             NSData *imageData = UIImageJPEGRepresentation(checkImg,0.6);
             [self cbPickWithData:imageData PickerController:picker];
         }
         
     }
 }
+///////////////////////////////////////////////////////////
+- (UIImage *)fixOrientation:(UIImage *)oImage {
+    
+    // No-op if the orientation is already correct
+    if (oImage.imageOrientation == UIImageOrientationUp) return oImage;
+    
+    // We need to calculate the proper transformation to make the image upright.
+    // We do it in 2 steps: Rotate if Left/Right/Down, and then flip if Mirrored.
+    CGAffineTransform transform = CGAffineTransformIdentity;
+    
+    switch (oImage.imageOrientation) {
+        case UIImageOrientationDown:
+        case UIImageOrientationDownMirrored:
+            transform = CGAffineTransformTranslate(transform, oImage.size.width, oImage.size.height);
+            transform = CGAffineTransformRotate(transform, M_PI);
+            break;
+            
+        case UIImageOrientationLeft:
+        case UIImageOrientationLeftMirrored:
+            transform = CGAffineTransformTranslate(transform, oImage.size.width, 0);
+            transform = CGAffineTransformRotate(transform, M_PI_2);
+            break;
+            
+        case UIImageOrientationRight:
+        case UIImageOrientationRightMirrored:
+            transform = CGAffineTransformTranslate(transform, 0, oImage.size.height);
+            transform = CGAffineTransformRotate(transform, -M_PI_2);
+            break;
+        default:break;
+    }
+    
+    switch (oImage.imageOrientation) {
+        case UIImageOrientationUpMirrored:
+        case UIImageOrientationDownMirrored:
+            transform = CGAffineTransformTranslate(transform, oImage.size.width, 0);
+            transform = CGAffineTransformScale(transform, -1, 1);
+            break;
+            
+        case UIImageOrientationLeftMirrored:
+        case UIImageOrientationRightMirrored:
+            transform = CGAffineTransformTranslate(transform, oImage.size.height, 0);
+            transform = CGAffineTransformScale(transform, -1, 1);
+            break;
+        default:break;
+    }
+    
+    // Now we draw the underlying CGImage into a new context, applying the transform
+    // calculated above.
+    CGContextRef ctx = CGBitmapContextCreate(NULL, oImage.size.width, oImage.size.height,
+                                             CGImageGetBitsPerComponent(oImage.CGImage), 0,
+                                             CGImageGetColorSpace(oImage.CGImage),
+                                             CGImageGetBitmapInfo(oImage.CGImage));
+    CGContextConcatCTM(ctx, transform);
+    switch (oImage.imageOrientation) {
+        case UIImageOrientationLeft:
+        case UIImageOrientationLeftMirrored:
+        case UIImageOrientationRight:
+        case UIImageOrientationRightMirrored:
+            // Grr...
+            CGContextDrawImage(ctx, CGRectMake(0,0,oImage.size.height,oImage.size.width), oImage.CGImage);
+            break;
+            
+        default:
+            CGContextDrawImage(ctx, CGRectMake(0,0,oImage.size.width,oImage.size.height), oImage.CGImage);
+            break;
+    }
+    
+    // And now we just create a new UIImage from the drawing context
+    CGImageRef cgimg = CGBitmapContextCreateImage(ctx);
+    UIImage *img = [UIImage imageWithCGImage:cgimg];
+    CGContextRelease(ctx);
+    CGImageRelease(cgimg);
+    return img;
+}
+
+///////////////////////////////////////////////////////////
 
 -(void)cbPickWithData:(NSData*)imageData PickerController:(UIImagePickerController *)picker{
     if (imageData) {
@@ -129,6 +220,7 @@
 		UIImagePickerController *picker = [[UIImagePickerController alloc] init];
 		[picker setDelegate:self];
 		[picker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+        picker.allowsEditing = YES;
 		picker.mediaTypes = [NSArray arrayWithObjects:@"public.image",nil];
 		if (320 == SCREEN_WIDTH || ![EUtility isIpad]) {
 			[EUtility brwView:euexObj.meBrwView presentModalViewController:picker animated:NO];

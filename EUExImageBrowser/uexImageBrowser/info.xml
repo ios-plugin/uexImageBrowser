@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <uexplugins>
     <plugin
-        uexName="uexImageBrowser" version="3.0.18" build="18">
-        <info>18:uexImageBrowser.pick新增可选参数，可以返回无损画质图片</info>
+        uexName="uexImageBrowser" version="3.0.19" build="19">
+        <info>19:对选取图片方向做了处理，uexImageBrowser.pick选取相册照片增加"确认选取"功能</info>
+        <build>18:uexImageBrowser.pick新增可选参数，可以返回无损画质图片</build>
         <build>17:修改浏览图片时与退出后的状态栏的颜色不统一。</build>
         <build>16:增加uexImageBrowser.cropImage()图片截取功能</build>
         <build>15:修复uexImageBrowser.pick选取图片质量变差和状态栏会改变的问题</build>
